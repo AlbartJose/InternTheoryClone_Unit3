@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/styleHeadFoot.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/styleContact.css" rel="stylesheet">
+    <link href="../css/homeSigned.css" rel="stylesheet">
+
+    <style>
+        
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="hbside1" id="hbsideid1">
+        <div>
+            <div class="hb1sidehead">
+                <div class="hb1">
+                    <div class="hb1list pointer" id="openSide"
+                        onclick="document.getElementById('hbsideid1').style.display='none'">
+                        <span class="material-icons">
+                            menu
+                        </span>
+    
+                    </div>
+                </div>
+                <div class="hb2">
+                    <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+                </div>
+            </div>
+            <div>
+                <a href="mainPage.html">
+                    <div>
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Home
+                    </div>
+                </a>
+            </div>
+    
+            <div>
+                <a href="internship.html">
+                    <div>
+                        <span class="material-icons">
+                            view_list
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="jobs.html">
+                    <div>
+                        <span class="material-icons">
+                            work
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Jobs
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="company_register.html">
+                    <div>
+                        <span class="material-icons">
+                            playlist_add
+                        </span>
+    
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Post Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="online_courses.html">
+                    <div>
+                        <span class="material-icons">
+                            class
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Courses
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="contact.html">
+                    <div>
+                        <span class="material-icons">
+                            call
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Contact Us
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div onclick="toggleRegister()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            subject
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Register
+                    </div>
+                </a>
+            </div>
+            <div id="regCom">
+                <a href="company_register.html">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="regStu">
+                <a href="studentRegister_page.html">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+            <div onclick="toggleLogin()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            meeting_room
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Login
+                    </div>
+                </a>
+            </div>
+            <div id="logCom">
+                <a href="login_page.html">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="logStu">
+                <a href="login_page.html">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header sticky" id="myHeader">
+        <div>
+            <div class="hb1">
+                <div class="hb1list pointer" onclick="document.getElementById('hbsideid1').style.display='block'">
+                    <span class="material-icons">
+                        menu
+                    </span>
+    
+                </div>
+            </div>
+            <div class="hb2">
+                <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+            </div>
+            <div class="hb3"></div>
+            <div class="hb4">
+                <div id="shopCart" class="pointer">
+                    <div>
+                        <div id="cartNum">1</div>
+                    </div>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+    
+    
+                </div>
+                <div class="signedUserPr">
+                    <div>
+                        <div class="imgLogin"><img
+                                src="https://www.clipartmax.com/png/middle/269-2691367_user-login-person-man-enter-comments-logo.png">
+                        </div>
+                        <div>LogedIn</div>
+                        <div class="logout"></div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <div class="content" id="con1">
+        <div class="contactb1">
+            <div>
+                <div class="contactb1head">Contact</div>
+                <div>Have something to say? Give us a holler through any one of the ways below, and we’ll get back within 24 hours. On a side
+                    note, like the rest around us, we have fallen victims to Social Media. Feel free to get in touch on Facebook, LinkedIn
+                    or Instagram anytime!
+                </div>
+                <div class="contactinfo">
+                    <form>
+                        <div>
+                            <input class="contactinpb1" type="text" id="contactinfoEmail" placeholder="Email Address"><br>
+                            <div class="contactinpb2">Required</div>
+                        </div>
+                        <div>
+                            <input class="contactinpb1" type="text" id="contactinfoMobile" placeholder="Mobile no"><br>
+                            <div class="contactinpb2">Required</div>
+                        </div>
+                        <div>
+                            <input class="contactinpb1" type="text" id="contactinfoSub" placeholder="Subject"><br>
+                            <div class="contactinpb2">Required</div>
+                        </div>
+                        <div>
+                            <textarea placeholder="Message" id="contactinfoMessage" class="contactMessage contactinpb1"></textarea><br>
+                            <div class="contactinpb2">Required</div>
+                        </div>
+                        <div class="contactsubmit">
+                            <button type="submit" class="pointer">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contactSocial">
+                    <div>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                    </div>
+                    <div>OR</div>
+                    <div>Call: +91 81047 73673</div>
+                </div>
+            </div>
+            <div><img src="../images/mapInternTheory.JPG"></div>
+        </div>
+    </div>
+
+    <div class="contentFoot">
+        <div class="footb1">
+            <div class="connect">
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+
+            </div>
+            <div class="info">
+                <div>
+                    <div>BY PLACE</div>
+                    <hr>
+                    <div>Internships In Mumbai</div>
+                    <div>Internships In Delhi</div>
+                    <div>Internships In Bangalore</div>
+                    <div>Internships In Pune</div>
+                    <div>Internships In Hyderabad</div>
+                </div>
+                <div>
+                    <div>BY PROFILE</div>
+                    <hr>
+                    <div>Marketing Internships</div>
+                    <div>Business Development Internships</div>
+                    <div>Content Writing Interships</div>
+                    <div>Graphic Design Internships</div>
+                    <div>HR internships</div>
+                    <div>Engineering Internships</div>
+                </div>
+                <div>
+                    <div>BY TYPE</div>
+                    <hr>
+                    <div>Full Time Internships</div>
+                    <div>Part Time Internships</div>
+                    <div>Work From Home Internships</div>
+                </div>
+            </div>
+        </div>
+        <div class="footb2">
+            <div>Find Intership</div>
+            <div>Post Intership</div>
+            <div>Courses</div>
+            <div>Terms&Conditions</div>
+            <div>Privacy Polivy</div>
+            <div>Contact us</div>
+            <div>About us</div>
+            <div>Site us</div>
+        </div>
+        <hr>
+        <div class="footb3">
+            © 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script src="../scripts/sideTab.js"></script>

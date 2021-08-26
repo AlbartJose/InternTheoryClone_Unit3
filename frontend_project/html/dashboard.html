@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon"
+        href="https://drive.google.com/file/d/1RRpKl9lt4r2DJEnePaQ7UxXVh9Y9JwJR/view?usp=sharing" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='../css/internship.css' rel='stylesheet' type='text/css'>
+    <link href="../css/styleHeadFoot.css" rel="stylesheet">
+    <link href="../css/homeSigned.css" rel="stylesheet">
+
+    <title></title>
+</head>
+<style>
+    #user_data {
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 2px 2px 0 rgba(80, 80, 80, 0.2), 0 2px 5px 0 rgba(83, 83, 83, 0.19);
+        background-color: white;
+    }
+
+    #rightbox {
+        height: 400px;
+    }
+
+    #rightHeading {
+        width: 900px;
+        height: 40px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        background-color: white;
+        border: 2px dashed #e06f78;
+        border-radius:5px;
+        padding-top: 0px;
+        padding-bottom: 2px;
+    }
+    #rightHeading p{
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-left: 10px ;
+    }
+
+    #user_data a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        text-align: center;
+        padding-top: 5px;
+        background-color: rgb(2, 107, 245);
+        color: white;
+        border: 0px;
+        box-shadow: 0 0px 0px;
+        border-radius: 5px;
+        font-weight: bold;
+        float: left;
+        height: 20px;
+        width: 90px;
+        margin-left: 105px;
+        margin-top: 5px;
+        text-decoration: none;
+    }
+
+    #user_data p:first-of-type {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        float: left;
+        clear: both;
+        margin-left: 109px;
+        margin-top: 5px;
+        font-size: 14px;
+        color: rgb(153, 153, 153);
+
+    }
+
+    .data {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .heading1 {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        float: left;
+        font-size: 20px;
+        margin-top: 25px;
+        margin-left: 25px;
+
+    }
+
+    .heading1 a {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    #rightbox{
+            background-color:white;
+            margin-top:10px;
+            margin-left:20px;
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            float: left;
+            width:900px;
+            height:250px;
+            box-shadow: 0 2px 2px 0 rgba(80, 80, 80, 0.2), 0 2px 5px 0 rgba(83, 83, 83, 0.19);
+            overflow: hidden;
+          /*  border: 1px solid black;*/
+        }
+        .rightBox_img_blocks{
+            width:350px;
+            height:50px;
+            border: 1px solid rgb(214, 214, 214);
+            float:left;
+            margin-left:20px;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+        .rightBox_img_blocks img{
+            height:50px;
+            width:100px;
+            float:left;
+        }
+        .rightBox_img_blocks p{
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            float: left;
+            font-size: 15px;
+            margin-top: 5px ;
+            margin-left: 5px;
+        }
+        .rightBox_img_blocks h6{
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            float: left;
+            font-size: 10px;
+            margin:0;
+            margin-top:-10px;
+            margin-left: 8px;
+        }
+        .recommended{
+           display: flex;
+           flex-wrap: nowrap;
+            overflow: hidden !important;
+
+            width:900px;
+            height:60px;
+
+
+        }
+        .recommended_heading{
+            color:gray;
+            font-size:20px;
+            margin-left: 20px;
+            margin-bottom:8px;
+            font-weight:400;
+        }
+        #main_dashboard{
+            height:600px;
+            width:900px;
+            background-color:white;
+            box-shadow: 0 2px 2px 0 rgba(80, 80, 80, 0.2), 0 2px 5px 0 rgba(83, 83, 83, 0.19);
+            float:left;
+            margin-left: 20px;
+            margin-top: 30px;
+            
+        }
+        .dash_selector button{
+            background-color: white;
+            border:none;
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            margin-top:20px;
+            margin-left: 10px;
+        }
+        .r_blocks{
+            border-bottom: 2px dashed rgb(194, 192, 192);
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            width:90%;
+            margin-left: 5%;
+            height:124px;
+            margin-top:0px;
+
+        }
+        .catalogue{
+            width:200px;
+            height:25px;
+            padding-top: 5px;
+            border:1px solid #499ce0;
+            border-radius: 5px;
+            text-align: center;
+            float:left;
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            margin-left: 350px;
+
+        }
+        .smiley{
+            text-align: center;
+        }
+        .courses p{
+            text-align: center;
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+
+        }
+        .courses{
+            margin-top:80px;
+        }
+        .status{
+            font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            color:rgb(255, 160, 0) !important;
+            float:right;
+            font-size: 16px !important;
+            margin-top: -65px !important;
+
+        }
+        .view_app{
+            float:right;
+            color:#087CDD !important;
+            cursor:pointer;
+            font-weight: 600 !important;
+        }
+
+</style>
+
+<body>
+
+    <div class="hbside1" id="hbsideid1">
+        <div>
+            <div class="hb1sidehead">
+                <div class="hb1">
+                    <div class="hb1list pointer" id="openSide"
+                        onclick="document.getElementById('hbsideid1').style.display='none'">
+                        <span class="material-icons">
+                            menu
+                        </span>
+
+                    </div>
+                </div>
+                <div class="hb2">
+                    <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+                </div>
+            </div>
+            <div>
+                <a href="mainPage.html">
+                    <div>
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Home
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a href="internship.html">
+                    <div>
+                        <span class="material-icons">
+                            view_list
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="jobs.html">
+                    <div>
+                        <span class="material-icons">
+                            work
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Jobs
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="company_register.html">
+                    <div>
+                        <span class="material-icons">
+                            playlist_add
+                        </span>
+
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Post Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="online_courses.html">
+                    <div>
+                        <span class="material-icons">
+                            class
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Courses
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="contact.html">
+                    <div>
+                        <span class="material-icons">
+                            call
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Contact Us
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div onclick="toggleRegister()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            subject
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Register
+                    </div>
+                </a>
+            </div>
+            <div id="regCom">
+                <a href="company_register.html">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="regStu">
+                <a href="studentRegister_page.html">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+            <div onclick="toggleLogin()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            meeting_room
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Login
+                    </div>
+                </a>
+            </div>
+            <div id="logCom">
+                <a href="login_page.html">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="logStu">
+                <a href="login_page.html">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header sticky" id="myHeader">
+        <div>
+            <div class="hb1">
+                <div class="hb1list pointer" onclick="document.getElementById('hbsideid1').style.display='block'">
+                    <span class="material-icons">
+                        menu
+                    </span>
+
+                </div>
+            </div>
+            <div class="hb2">
+                <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+            </div>
+            <div class="hb3"></div>
+            <div class="hb4">
+                <div id="shopCart" class="pointer">
+                    <div>
+                        <div id="cartNum">1</div>
+                    </div>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+
+
+                </div>
+                <div class="signedUserPr">
+                    <div>
+                        <div class="imgLogin"><img
+                                src="https://www.clipartmax.com/png/middle/269-2691367_user-login-person-man-enter-comments-logo.png">
+                        </div>
+                        <div>LogedIn</div>
+                        <div class="logout"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="con1">
+        <div id='main'>
+            <div id='leftbox'>
+                <div id='user_data'>
+                    <img src='https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?size=338&ext=jpg'
+                        style='width:100px;height:100px;margin-left: 100px;margin-top: 30px'>
+                    <a href='dashboard.html'>MY PROFILE</a>
+                    <p>Albart Jose</p>
+                    <div
+                        style='height:-5px;width:230px;border:1px solid rgb(151, 151, 151);float:left;margin-left:35px;margin-bottom: 15px;'>
+                    </div>
+                    <p class='data'>albartbtme@gmail.com</p>
+                    <p class='data'>7408939361</p>
+                </div>
+            </div>
+            <div id='rightHeading'>
+                <p>Still in college and want to start a business already? Become our affiliate and kickstart your
+                    entrepreneurial journey. <a style='color:#DF1E2E'><strong>Click here for details</strong></a></p>
+            </div>
+            <div id='rightbox'>
+                <div style='width:800px'>
+                    <p class='recommended_heading'>Recommended Courses</p>
+                    <div class='recommended'>
+                        <div class='rightBox_img_blocks'>
+                            <img src='https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png'>
+                            <p>Web Development Course</p>
+                        </div>
+                        <div class='rightBox_img_blocks'>
+                            <img src='https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png'>
+                            <p>R Programming Course</p>
+                        </div>
+                        <div class='rightBox_img_blocks'>
+                            <img src='https://assets.interntheory.com/courses/banner/1573120508.png'>
+                            <p>Digital Marketing Course</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class='recommended_heading'>Recomended Internships</p>
+                    <div class='recommended'>
+                        <div class='rightBox_img_blocks'>
+                            <img
+                                src='https://assets.interntheory.com/uploads/company/logos/f09d2dbf9a5c5c0eff067b703b279aeb0089b64c.jpg'>
+                            <p>Business Development</p>
+                            <h6>Unnati: The Knowledge Hub</h6>
+                        </div>
+                        <div class='rightBox_img_blocks'>
+                            <img
+                                src='https://assets.interntheory.com/uploads/company/logos/a74d88544322279c33db28830bff100d0d6e12f6.jpg'>
+                            <p>Business Develoment</p>
+                            <h6>Strategy Wanted</h6>
+                        </div>
+                        <div class='rightBox_img_blocks'>
+                            <img src='https://assets.interntheory.com/uploads/company/companylogos/56716f23c5db6.jpg'>
+                            <p>Sales and Marketing</p>
+                            <h6>AEGIS CONSULTANTS</h6>
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
+        
+            </div>
+            <div id='main_dashboard'>
+                <div class='dash_selector'>
+                    <a> <button onclick='myApplication()'>MY APPLICATION</button></a>
+                    <a><button onclick='myCourses()'>MY COURSES</button></a>
+                </div>
+                <div id='dashboard_content'>
+        
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="contentFoot">
+        <div class="footb1">
+            <div class="connect">
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+    
+            </div>
+            <div class="info">
+                <div>
+                    <div>BY PLACE</div>
+                    <hr>
+                    <div>Internships In Mumbai</div>
+                    <div>Internships In Delhi</div>
+                    <div>Internships In Bangalore</div>
+                    <div>Internships In Pune</div>
+                    <div>Internships In Hyderabad</div>
+                </div>
+                <div>
+                    <div>BY PROFILE</div>
+                    <hr>
+                    <div>Marketing Internships</div>
+                    <div>Business Development Internships</div>
+                    <div>Content Writing Interships</div>
+                    <div>Graphic Design Internships</div>
+                    <div>HR internships</div>
+                    <div>Engineering Internships</div>
+                </div>
+                <div>
+                    <div>BY TYPE</div>
+                    <hr>
+                    <div>Full Time Internships</div>
+                    <div>Part Time Internships</div>
+                    <div>Work From Home Internships</div>
+                </div>
+            </div>
+        </div>
+        <div class="footb2">
+            <div>Find Intership</div>
+            <div>Post Intership</div>
+            <div>Courses</div>
+            <div>Terms&Conditions</div>
+            <div>Privacy Polivy</div>
+            <div>Contact us</div>
+            <div>About us</div>
+            <div>Site us</div>
+        </div>
+        <hr>
+        <div class="footb3">
+            © 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.
+        </div>
+    
+    </div>
+
+
+</body>
+
+</html>
+
+<script src='../scripts/dashboard.js'></script>
+<script src="../scripts/sideTab.js"></script>

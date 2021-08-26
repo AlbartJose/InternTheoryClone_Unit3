@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/styleHeadFoot.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/student_register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <div class="hbside1" id="hbsideid1">
+      <div>
+        <div class="hb1sidehead">
+          <div class="hb1">
+            <div class="hb1list pointer" id="openSide" onclick="document.getElementById('hbsideid1').style.display='none'">
+              <span class="material-icons">
+                menu
+              </span>
+    
+            </div>
+          </div>
+          <div class="hb2">
+            <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+          </div>
+        </div>
+        <div>
+          <a href="mainPage.html">
+            <div>
+              <span class="material-icons">
+                home
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Home
+            </div>
+          </a>
+        </div>
+    
+        <div>
+          <a href="internship.html">
+            <div>
+              <span class="material-icons">
+                view_list
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Internships
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="jobs.html">
+            <div>
+              <span class="material-icons">
+                work
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Jobs
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="company_register.html">
+            <div>
+              <span class="material-icons">
+                playlist_add
+              </span>
+    
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Post Internships
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="online_courses.html">
+            <div>
+              <span class="material-icons">
+                class
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Courses
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="contact.html">
+            <div>
+              <span class="material-icons">
+                call
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Contact Us
+            </div>
+          </a>
+        </div>
+        <hr>
+        <div onclick="toggleRegister()">
+          <a>
+            <div>
+              <span class="material-icons">
+                subject
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Register
+            </div>
+          </a>
+        </div>
+        <div id="regCom">
+          <a href="company_register.html">
+            <div>
+              <span class="material-icons">
+                business
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Company
+            </div>
+          </a>
+        </div>
+        <div id="regStu">
+          <a href="studentRegister_page.html">
+            <div>
+              <span class="material-icons">
+                person
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Student
+            </div>
+          </a>
+        </div>
+        <div onclick="toggleLogin()">
+          <a>
+            <div>
+              <span class="material-icons">
+                meeting_room
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Login
+            </div>
+          </a>
+        </div>
+        <div id="logCom">
+          <a href="login_page.html">
+            <div>
+              <span class="material-icons">
+                business
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Company
+            </div>
+          </a>
+        </div>
+        <div id="logStu">
+          <a href="login_page.html">
+            <div>
+              <span class="material-icons">
+                person
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Student
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header sticky" id="myHeader">
+      <div>
+        <div class="hb1">
+          <div class="hb1list pointer" onclick="document.getElementById('hbsideid1').style.display='block'">
+            <span class="material-icons">
+              menu
+            </span>
+    
+          </div>
+        </div>
+        <div class="hb2">
+          <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+        </div>
+        <div class="hb3"></div>
+        <div class="hb4">
+          <div id="shopCart" class="pointer">
+            <div>
+              <div id="cartNum">1</div>
+            </div>
+            <span class="material-icons">
+              shopping_cart
+            </span>
+    
+    
+          </div>
+          <div>
+            <a class="sign" href="login_page.html">
+              <div>SIGN IN</div>
+    
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="content" id="con1">
+        <div id="example">
+            <div class="main_block">
+              <div class="main_block1">
+                <div class="firt_block">
+                  <h5>Register Candidate</h5>
+                  <h6>Already have an account? <a href="student_login.html">Sign in</a></h6>
+                </div>
+                <div class="second_block">
+                  <p>
+                    If you are a company looking to hire interns, please register as a
+                    company by clicking <a href="company_register.html">here</a>"."
+                  </p>
+                </div>
+                <div>
+                  <div class="third_block" style="width: 97%; background-color:rgb(13, 130, 226);border-radius: 5px;text-align: center; margin-top: 5px;">
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=428399661061982&kid_directed_site=0&app_id=428399661061982&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D428399661061982%26redirect_uri%3Dhttps%253A%252F%252Finterntheory.com%252Fapi%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6d3459b6-7ed7-4b85-a3db-1c2465510bc7%26tp%3Dunspecified&cancel_url=https%3A%2F%2Finterntheory.com%2Fapi%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%23_%3D_&display=page&locale=hi_IN&pl_dbl=0" style="color: white; font-family: 'Roboto', sans-serif;"><img  src="https://www.interntheory.com/assets/iconsLogos/facebook-circular-logo.svg" style="float: left; margin-left: 5%;margin-top: 1%; background-color: white;" height="20" ><div style="margin-top:1.4%; font-weight: 590; letter-spacing: 0.05em; font-size: 14px;font-family:'Roboto', sans-serif;">REGISTER WITH FACEBOOK</div></a>
+                  </div>
+                </div>
+                <div>
+      
+                  <div class="third_block" style="width: 97%; background-color:rgb(13, 130, 226);border-radius: 5px;text-align: center; margin-top: 5px;">
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=428399661061982&kid_directed_site=0&app_id=428399661061982&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D428399661061982%26redirect_uri%3Dhttps%253A%252F%252Finterntheory.com%252Fapi%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6d3459b6-7ed7-4b85-a3db-1c2465510bc7%26tp%3Dunspecified&cancel_url=https%3A%2F%2Finterntheory.com%2Fapi%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%23_%3D_&display=page&locale=hi_IN&pl_dbl=0" style="color: white; font-family: 'Roboto', sans-serif;"><img  src="https://www.interntheory.com/assets/iconsLogos/googlelogo.svg" style="float: left; margin-left: 5%;margin-top: 1%; background-color: white;" height="20" ><div style="margin-top:1.4%; font-weight: 590; letter-spacing: 0.05em; font-size: 14px;font-family:'Roboto', sans-serif;">REGISTER WITH GOOGLE</div></a>
+                  </div>
+                  <div style="text-align: center;">
+                    <h6 style="color: rgb(160, 157, 157); font-family: 'Roboto', sans-serif; ;">OR</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="form_buildingBlock">
+                <form id="myForm">
+                  <div class="firstName">
+                    <label for="firstName">
+                      <input id="firstname" type="text" placeholder="First Name*" />
+                    </label>
+                  </div>
+                  <div class="lastName">
+                    <label for="secondName">
+                      <input id="lastname" type="text" placeholder="Last Name*" />
+                    </label>
+                  </div>
+                  <div class="email" style="clear: both;">
+                    <label for="email">
+                      <input id="email" type="text" placeholder="Email*" />
+                    </label>
+                  </div>
+                  <div class="password">
+                    <label for="password">
+                      <input id="password" type="password" placeholder="Password*" />
+                    </label>
+                  </div>
+                  <div class="mobile_num">
+                    <label for="mobile_num">
+                      <input
+                        id="mob_num"
+                        type="number"
+                        placeholder="Mobile Number*"
+                      />
+                    </label>
+                  </div>
+                  <div class="selecCity">
+                    <div>
+                      <input
+                        list="city"
+                        type="text"
+                        placeholder="Select City"
+                        id="cities"
+                      />
+                      <datalist id="city">
+                        <option value="Bhopal"></option>
+                        <option value="Mumbai"></option>
+                        <option value="Pune"></option>
+                        <option value="Bangalore"></option>
+                        <option value="Hyderabad"></option>
+                      </datalist>
+                    </div>
+                  </div>
+                  <div class="coursePreference">
+                    <div>
+                      <input
+                        id="course"
+                        list="courses"
+                        type="text"
+                        placeholder="Preference Select one or more*"
+                      />
+                      <datalist id="courses">
+                        <option value="Acturail Science"></option>
+                        <option value="Admin"></option>
+                        <option value="Advertising"></option>
+                        <option value="Animation"></option>
+                        <option value="App Design and Development"></option>
+                        <option value="Arcitecture"></option>
+                        <option value="Biotech and Medicine"></option>
+                      </datalist>
+                    </div>
+                  </div>
+                  <div class="whoRecommendUs">
+                    <div>
+                      <input
+                        id="recommend"
+                        list="recommends"
+                        type="text"
+                        placeholder="How did you find us?*"
+                      />
+                      <datalist id="recommends">
+                        <option value="From A Friend"></option>
+                        <option value="Google Search Result"></option>
+                        <option value="Google Ads"></option>
+                        <option value="Bing/Yahoo Search Results"></option>
+                        <option value="Social Media"></option>
+                        <option value="Others"></option>
+                      </datalist>
+                    </div>
+                  </div>
+                  <div class="suggestion">
+                    <div>
+                      <input
+                        id="suggest"
+                        list="suggestions"
+                        type="text"
+                        placeholder="What are you looking for?*"
+                      />
+                      <datalist id="suggestions">
+                        <option value="Internships"></option>
+                        <option value="Jobs"></option>
+                        <option value="Both"></option>
+                      </datalist>
+                    </div>
+                  </div>
+                  <div class="affilateThing">
+                    <label for="affilate">
+                      <input
+                        id="affilate"
+                        type="text"
+                        placeholder="Affilate Code if any*"
+                      />
+                    </label>
+                  </div>
+                  <div class="submitButton">
+                      <input type="button" value="Next" onclick="addStudentDetails()">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>        
+    </div>
+
+
+
+    <div class="contentFoot">
+        <div class="footb1">
+            <div class="connect">
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+
+            </div>
+            <div class="info">
+                <div>
+                    <div>BY PLACE</div>
+                    <hr>
+                    <div>Internships In Mumbai</div>
+                    <div>Internships In Delhi</div>
+                    <div>Internships In Bangalore</div>
+                    <div>Internships In Pune</div>
+                    <div>Internships In Hyderabad</div>
+                </div>
+                <div>
+                    <div>BY PROFILE</div>
+                    <hr>
+                    <div>Marketing Internships</div>
+                    <div>Business Development Internships</div>
+                    <div>Content Writing Interships</div>
+                    <div>Graphic Design Internships</div>
+                    <div>HR internships</div>
+                    <div>Engineering Internships</div>
+                </div>
+                <div>
+                    <div>BY TYPE</div>
+                    <hr>
+                    <div>Full Time Internships</div>
+                    <div>Part Time Internships</div>
+                    <div>Work From Home Internships</div>
+                </div>
+            </div>
+        </div>
+        <div class="footb2">
+            <div>Find Intership</div>
+            <div>Post Intership</div>
+            <div>Courses</div>
+            <div>Terms&Conditions</div>
+            <div>Privacy Polivy</div>
+            <div>Contact us</div>
+            <div>About us</div>
+            <div>Site us</div>
+        </div>
+        <hr>
+        <div class="footb3">
+            © 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script src="../scripts/student_register.js"></script>
+<script src="../scripts/sideTab.js"></script>

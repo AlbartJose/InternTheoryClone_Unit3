@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/styleHeadFoot.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link href='../css/cart_page.css' rel='stylesheet' type='text/css'>
+    <link href="../css/homeSigned.css" rel="stylesheet">
+
+    <title>Online Courses | Intern Theory</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            position: absolute;
+            background-color: transparent;
+            flex-direction: row;
+            font-family: "lato", ubuntu, helvetica, sans-serif;
+            visibility: hidden;
+
+
+        }
+
+        #paymentBox {
+            margin-top: 0px;
+            z-index: 10000;
+            width: 350px;
+            height: 580px;
+            background-color: rgb(223, 30, 46);
+            border: 2px solid black;
+
+        }
+
+        .topBox {
+            display: flex;
+            flex-direction: row;
+            width: 350px;
+            height: fit-content;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            background-color: white;
+            object-fit: contain;
+            margin-left: 25px;
+            margin-top: 25px;
+
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .top_head {
+            font-family: 'Roboto', 'Ubuntu', sans-serif;
+            font-size: 20px;
+            overflow: hidden;
+            margin-left: 20px;
+
+        }
+
+        .top_head p:nth-of-type(2) {
+            margin-top: -21px;
+            margin-bottom: 0px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        #amount {
+            font-size: 24px !important;
+            margin-top: 10px !important;
+
+        }
+
+        #content {
+            background-color: white;
+            width: 100%;
+            height: 400px;
+            margin-top: 10px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .content_heading {
+            margin-left: 30px;
+            font-size: 14px;
+            color: rgb(136, 136, 136);
+        }
+
+        .button_1 {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-left: 43px;
+        }
+
+        .button_vector {
+            display: flex;
+            float: left;
+            margin-top: 8px;
+        }
+
+        .button_vector_1 {
+            display: flex;
+            float: left;
+            margin-top: 1px;
+        }
+
+        .payment_type {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0px;
+            color: rgb(37, 37, 37);
+            margin-top: 5px;
+        }
+
+        .card_options {
+            margin: 0px;
+            margin-top: -10px;
+            color: gray;
+        }
+
+        .content_button {
+            width: 90%;
+            margin-left: 5%;
+            background-color: white;
+            border: 1px solid rgb(212, 212, 212);
+            cursor: pointer;
+
+        }
+
+        .content_button_1 {
+            width: 90%;
+            height: 55px;
+            margin-left: 5%;
+            background-color: white;
+            border: 1px solid rgb(212, 212, 212);
+            cursor: pointer;
+
+        }
+
+        .card {
+            width: 350px;
+            height: 120px;
+            display: grid;
+            grid-template: 'a a b'
+                'c c d';
+        }
+
+        .card input {
+            height: 30px;
+            width: 200px;
+            margin: 0px;
+            margin-top: 0px;
+            border: 0px;
+            border-bottom: 1px solid rgb(75, 75, 75);
+        }
+
+        .card label {
+            font-family: 'Roboto', 'Ubuntu', sans-serif;
+            font-size: 13px;
+            color: rgb(59, 59, 59);
+
+        }
+
+        .div1 {
+            grid-area: a
+        }
+
+        .div2 {
+            grid-area: b
+        }
+
+        .div3 {
+            grid-area: c
+        }
+
+        .div4 {
+            grid-area: d
+        }
+
+        #credit_card {
+            margin-top: 10px;
+        }
+
+        .checkbox {
+            margin-top: 10px;
+            width: 20px;
+            height: 20px;
+            float: left;
+            background-color: rgb(223, 30, 46);
+        }
+
+        .remember {
+            margin-top: 10px;
+            color: rgb(66, 66, 66);
+        }
+
+        #checkout {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(223, 30, 46);
+            color: azure;
+            font-size: 25px;
+            border: 0px;
+            cursor: pointer;
+            margin-top: -30px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="hbside1" id="hbsideid1">
+        <div>
+            <div class="hb1sidehead">
+                <div class="hb1">
+                    <div class="hb1list pointer" id="openSide"
+                        onclick="document.getElementById('hbsideid1').style.display='none'">
+                        <span class="material-icons">
+                            menu
+                        </span>
+    
+                    </div>
+                </div>
+                <div class="hb2">
+                    <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+                </div>
+            </div>
+            <div>
+                <a href="mainPage.html">
+                    <div>
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Home
+                    </div>
+                </a>
+            </div>
+    
+            <div>
+                <a href="internship.html">
+                    <div>
+                        <span class="material-icons">
+                            view_list
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="jobs.html">
+                    <div>
+                        <span class="material-icons">
+                            work
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Jobs
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="company_register.html">
+                    <div>
+                        <span class="material-icons">
+                            playlist_add
+                        </span>
+    
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Post Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="online_courses.html">
+                    <div>
+                        <span class="material-icons">
+                            class
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Courses
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="contact.html">
+                    <div>
+                        <span class="material-icons">
+                            call
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Contact Us
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div onclick="toggleRegister()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            subject
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Register
+                    </div>
+                </a>
+            </div>
+            <div id="regCom">
+                <a href="company_register.html">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="regStu">
+                <a href="studentRegister_page.html">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+            <div onclick="toggleLogin()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            meeting_room
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Login
+                    </div>
+                </a>
+            </div>
+            <div id="logCom">
+                <a href="login_page.html">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="logStu">
+                <a href="login_page.html">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header sticky" id="myHeader">
+        <div>
+            <div class="hb1">
+                <div class="hb1list pointer" onclick="document.getElementById('hbsideid1').style.display='block'">
+                    <span class="material-icons">
+                        menu
+                    </span>
+    
+                </div>
+            </div>
+            <div class="hb2">
+                <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+            </div>
+            <div class="hb3"></div>
+            <div class="hb4">
+                <div id="shopCart" class="pointer">
+                        <div id="cartNum"></div>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+    
+    
+                </div> 
+                <div class="signedUserPr">
+                    <div>
+                        <div class="imgLogin"><img
+                                src="https://www.clipartmax.com/png/middle/269-2691367_user-login-person-man-enter-comments-logo.png">
+                        </div>
+                        <div>LogedIn</div>
+                        <div class="logout"></div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content" id="con1">
+        <div id=container>
+            <div id=paymentBox>
+                <div class=topBox>
+                    <div class=logo>
+                        <img src='https://cdn.razorpay.com/logos/8BOCiNqJJB6Zfs_medium.jpg' />
+                    </div>
+                    <div class='top_head'>
+                        <p>InternTheory</p>
+                        <p>Purchase Description</p>
+                        <p id="amount"></p>
+                    </div>
+                </div>
+
+                <div id='content'>
+                    <div id='red' style="width:100%;height:2%;background-color:rgb(184, 28, 41)"></div>
+                    <div>
+                        <div>
+                            <p class='content_heading'>PREFERED PAYMENT METHODS</p>
+                        </div>
+                        <div>
+                            <button class='content_button_1' onclick='card()'>
+                                <div class='button_vector_1'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        credit_card
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>EMI - Use Your Saved Cards</p>
+                                    </div>
+
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button_1' onclick='card()'>
+                                <div class='button_vector_1'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        account_balance_wallet
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>UPI - Google Pay</p>
+                                    </div>
+
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button_1' onclick='card()'>
+                                <div class='button_vector_1'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        account_balance_wallet
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>UPI - BHIM</p>
+                                    </div>
+
+                                </div>
+                            </button>
+
+                        </div>
+
+
+
+                    </div>
+                    <div>
+                        <div>
+                            <p class='content_heading'>CARDS, UPI & MORE</p>
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        credit_card
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>Card</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>Visa,MasterCard,RuPay&More</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        account_balance_wallet
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>UPI/QR</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>Google Pay,BHIM,PhonePe&More</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        language
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>Net Banking</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>All Indian Banks</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        payments
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>Wallet</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>PhonePe & More</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        account_balance
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>EMI</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>EMI via Credit & Debit Cards</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        credit_card
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>Pay Later</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>ICICI Bank PayLater</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="backgroundBlock">
+
+            <div class="container">
+                <div class="left">
+                    <div style="font-size: 20px; margin-left: 3%;margin-top: 3%;">Cart</div>
+                    <!-- cart things                    -->
+                    <div id="cart_values" style="margin-top: 1%; margin-left: 3%;">
+
+                    </div>
+                    <div id="empty_cart">
+                        <input type="button" value="Empty Cart" id="emptyCart" onclick="empty_cart()">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="outerSizing">
+                        <div class="amount_line">
+                            <div>Amount</div>
+                            <div style="width: 56%;"></div>
+                            <div id="rate"></div>
+                        </div>
+                        <div class="cgst_line" style="border-bottom: 2px solid rgb(165, 162, 162);">
+                            <div><span> CGST9%</span></div>
+                            <div style="width: 57%;"></div>
+                            <div>₹3600</div>
+                        </div>
+                        <div class="sgst_line">
+                            <div>SGST9%</div>
+                            <div style="width: 57%;"></div>
+                            <div>₹3600</div>
+                        </div>
+                        <div class="total_line">
+                            <div>Total:</div>
+                            <div style="width: 61%;"></div>
+                            <div id="total"></div>
+                        </div>
+                        <div style="margin:10%"></div>
+                        <div class="coupon_code" style="border-bottom: 1px solid rgb(116, 112, 112);">
+                            <label for="couponcode">
+                                <input id="couponcode" type="text" placeholder="Coupon Code"
+                                    style="outline: none; border: none;font-weight: 300; font-size: 15px;">
+                            </label>
+                        </div>
+                        <div id="goBtn">
+                            <input type="button" value="GO" id="goInput" onclick="ApplyPromo()">
+                        </div>
+                        <div></div>
+                        <div id="checkoutBtn">
+                            <input type="button" value="CHECKOUT" id="checkoutInput" onclick="checkOut()">
+                        </div>
+                        <div class="emiAppend"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contentFoot">
+        <div class="footb1">
+            <div class="connect">
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+
+            </div>
+            <div class="info">
+                <div>
+                    <div>BY PLACE</div>
+                    <hr>
+                    <div>Internships In Mumbai</div>
+                    <div>Internships In Delhi</div>
+                    <div>Internships In Bangalore</div>
+                    <div>Internships In Pune</div>
+                    <div>Internships In Hyderabad</div>
+                </div>
+                <div>
+                    <div>BY PROFILE</div>
+                    <hr>
+                    <div>Marketing Internships</div>
+                    <div>Business Development Internships</div>
+                    <div>Content Writing Interships</div>
+                    <div>Graphic Design Internships</div>
+                    <div>HR internships</div>
+                    <div>Engineering Internships</div>
+                </div>
+                <div>
+                    <div>BY TYPE</div>
+                    <hr>
+                    <div>Full Time Internships</div>
+                    <div>Part Time Internships</div>
+                    <div>Work From Home Internships</div>
+                </div>
+            </div>
+        </div>
+        <div class="footb2">
+            <div>Find Intership</div>
+            <div>Post Intership</div>
+            <div>Courses</div>
+            <div>Terms&Conditions</div>
+            <div>Privacy Polivy</div>
+            <div>Contact us</div>
+            <div>About us</div>
+            <div>Site us</div>
+        </div>
+        <hr>
+        <div class="footb3">
+            © 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<script src="../scripts/cart_page.js"></script>
+<script src='../scripts/payment.js'></script>
+<script src="../scripts/sideTab.js"></script>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"rel="stylesheet">
+    <link rel="icon" type="image/x-icon"href="https://drive.google.com/file/d/1RRpKl9lt4r2DJEnePaQ7UxXVh9Y9JwJR/view?usp=sharing" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='../css/internship.css' rel='stylesheet' type='text/css'>
+    <link href="../css/styleHeadFoot.css" rel="stylesheet">
+    <link href="../css/homeSigned.css" rel="stylesheet">
+    <title></title>
+</head>
+<style>
+    #user_data{
+        width:300px;
+        height:300px;
+        box-shadow: 0 2px 2px 0 rgba(80, 80, 80, 0.2), 0 2px 5px 0 rgba(83, 83, 83, 0.19);
+        background-color:white;
+    }
+    #rightbox{
+        height:400px;
+    }
+    #rightHeading{
+        width:56.25rem;
+        height:5rem;
+        float:left;
+        margin-left:1.25rem;
+        margin-top: 0.625rem;
+        background-color:white;
+    }
+    #user_data a{
+        font-family: 'Roboto', sans-serif;
+        font-size:13px;
+        text-align: center;
+        padding-top:5px;
+        background-color:rgb(2, 107, 245);
+        color:white;
+        border: 0px;
+        box-shadow: 0 0px 0px;
+        border-radius:5px;
+        font-weight: bold;
+        float:left;
+        height:1.25rem;
+        width:5.625rem;
+        margin-left: 6.563rem;
+        margin-top: 5px;
+        text-decoration: none;
+    }
+    #user_data p:first-of-type{
+        font-family: 'Roboto',Arial, Helvetica, sans-serif;
+        float:left;
+        clear:both;
+        margin-left: 6.813rem;
+        margin-top: 5px;
+        font-size:0.875rem;
+        color:rgb(153, 153, 153);
+
+    }
+    .data{
+        font-family: 'Roboto',Arial, Helvetica, sans-serif;
+        text-align:left;
+        margin-left:3.125rem;
+        margin-top: 10px;
+    }
+    .heading1{
+        font-family: 'Roboto',Arial, Helvetica, sans-serif;
+        float:left;
+        font-size:1.25rem;
+        margin-top: 1.563rem;
+        margin-left: 1.563rem;
+
+    }
+    .heading1 a{
+        font-size: 1.375rem;
+        font-weight:600;
+    }
+    #form1{
+        width:90%;
+        height:25rem;
+        margin-left: 5%;
+        float:left;
+    }
+    .form1_1{
+        font-family: 'Roboto',Arial, Helvetica, sans-serif;
+        float:left;
+        margin-left:2.188rem;
+        margin-top:-20.313rem;
+        font-weight: 600;
+    }
+    .vertical_line{
+        margin-top:2.813rem;
+        height:300px;
+        width:0%;
+        border:1px solid black;
+        margin-left:2%;
+        background-color:rgb(3, 3, 3);
+    }
+    .circle{
+        font-family: 'Roboto',Arial, Helvetica, sans-serif;
+        width: 1.25rem;
+        height:1.25rem;
+        border-radius: 1.25rem;
+        text-align:center;
+        color:white;
+        float:left;
+        margin-left:1%;
+        margin-top:1.25rem;
+        background-color:rgb(2, 107, 245);
+    }
+    .form1_2{
+        font-family: 'Roboto',Arial, Helvetica, sans-serif;
+        float:left;
+        margin-left:35px;
+        margin-top:-295px;
+        font-weight: 300;
+
+    }
+    #form1_input{
+        font-family: 'Roboto',Arial, Helvetica, sans-serif;
+        border:0px solid black;
+        border-bottom: 1px solid rgb(58, 58, 58);
+        height:30px;
+        width:90%;
+        float:left;
+        margin-left:35px;
+        margin-top:-265px;
+    }
+    .form1_3{
+        margin-top:-164px;
+    }
+    
+    
+    #form1_checkbox{
+        margin-top: -131px;
+        margin-left: 40px;
+        float:left;
+
+    }
+    #checkbox1,#checkbox2{
+        font-size:12px;
+        width:1.25rem;
+        height:1.25rem;
+        margin-left:0px;
+        margin-top: 0px;
+    }
+    .check{
+        float:left;
+    }
+    .form1_next{
+        float:right;
+        font-family: 'Roboto', sans-serif;
+        font-size:15px;
+        text-align: center;
+        text-decoration: none;
+        padding-top:4px;
+        background-color:#DF1E2E;
+        color:white;
+        border: 0px;
+        box-shadow: 0 0px 0px;
+        border-radius:5px;
+        font-weight: bold;
+        height:30px;
+        width:4.063rem;
+        margin-right: 2.813rem;
+        margin-top: -1.25rem;
+        cursor: pointer;
+       
+    }
+    #checkbox_l {
+        margin-top:0px;
+       
+    }
+    #form_alert{
+        float:left;
+        margin-top:-14.375rem;
+        margin-left:2.188rem;
+        font-size:11px;
+        color:#DF1E2E;
+        visibility:hidden;
+    }
+    .circle2{
+        background-color: gray;
+        margin-top:19.063rem;
+        margin-left:-9px;
+    }
+    #application_form{
+        font-size:13px;
+        width:14.375rem;
+        margin-top:19.188rem;
+        margin-left:1.25rem;
+        color:gray;
+
+    }
+
+
+</style>
+
+<body>
+    <div class="hbside1" id="hbsideid1">
+        <div>
+            <div class="hb1sidehead">
+                <div class="hb1">
+                    <div class="hb1list pointer" id="openSide"
+                        onclick="document.getElementById('hbsideid1').style.display='none'">
+                        <span class="material-icons">
+                            menu
+                        </span>
+    
+                    </div>
+                </div>
+                <div class="hb2">
+                    <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+                </div>
+            </div>
+            <div>
+                <a href="mainPage.html">
+                    <div>
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Home
+                    </div>
+                </a>
+            </div>
+    
+            <div>
+                <a href="internship.html">
+                    <div>
+                        <span class="material-icons">
+                            view_list
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="jobs.html">
+                    <div>
+                        <span class="material-icons">
+                            work
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Jobs
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="company_register.html">
+                    <div>
+                        <span class="material-icons">
+                            playlist_add
+                        </span>
+    
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Post Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="online_courses.html">
+                    <div>
+                        <span class="material-icons">
+                            class
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Courses
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="contact.html">
+                    <div>
+                        <span class="material-icons">
+                            call
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Contact Us
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div onclick="toggleRegister()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            subject
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Register
+                    </div>
+                </a>
+            </div>
+            <div id="regCom">
+                <a href="company_register.html">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="regStu">
+                <a href="studentRegister_page.html">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+            <div onclick="toggleLogin()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            meeting_room
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Login
+                    </div>
+                </a>
+            </div>
+            <div id="logCom">
+                <a href="login_page.html">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="logStu">
+                <a href="login_page.html">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header sticky" id="myHeader">
+        <div>
+            <div class="hb1">
+                <div class="hb1list pointer" onclick="document.getElementById('hbsideid1').style.display='block'">
+                    <span class="material-icons">
+                        menu
+                    </span>
+    
+                </div>
+            </div>
+            <div class="hb2">
+                <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+            </div>
+            <div class="hb3"></div>
+            <div class="hb4">
+                <div id="shopCart" class="pointer">
+                    <div>
+                        <div id="cartNum">1</div>
+                    </div>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+    
+    
+                </div>
+                <div class="signedUserPr">
+                    <div>
+                        <div class="imgLogin"><img
+                                src="https://www.clipartmax.com/png/middle/269-2691367_user-login-person-man-enter-comments-logo.png">
+                        </div>
+                        <div>LogedIn</div>
+                        <div class="logout"></div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="con1">
+        <div id='main'>
+            <div id='leftbox'>
+                <div id='user_data'>
+                    <img src='https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?size=338&ext=jpg'
+                        style='width:100px;height:100px;margin-left: 100px;margin-top: 30px'>
+                    <a href='dashboard.html'>MY PROFILE</a>
+                    <p>Albart Jose</p>
+                    <div
+                        style='height:-5px;width:230px;border:1px solid rgb(151, 151, 151);float:left;margin-left:35px;margin-bottom: 15px;'>
+                    </div>
+                    <p class='data'>albartbtme@gmail.com</p>
+                    <p class='data'>7408939361</p>
+                </div>
+            </div>
+            <div id='rightHeading'>
+                <p class='heading1'>Application for <a>Digital Marketing</a> for <a>MOONSTRUCK ADVERTISING</a></p>
+            </div>
+            <div id='rightbox'>
+        
+                <div id='form1'>
+                    <div class='circle'>1</div>
+                    <div class='vertical_line'>
+                        <div class='circle circle2'>2</div>
+                        <p id='application_form'>Application Form</p>
+        
+                    </div>
+                    <p class='form1_1'>Before you apply for internships please answer these questions</p>
+                    <p class='form1_2'>Why do you wish to join us? What do you find interesting about this internship or
+                        company?</p>
+                    <input type='text' id='form1_input' placeholder='Type the answer here'>
+                    <p id='form_alert'>Required</p>
+                    <p class='form1_2 form1_3'>Please confirm that you satisfy the following criteria *</p>
+                    <div id='form1_checkbox'>
+                        <input type="checkbox" name="working" id="checkbox1"> <label for="checkbox1" id='checkbox_l'>Are you
+                            able to work between Jul 20, 2021 to Jul 25, 2021</label>
+                        <input type="checkbox" name="working_location" id="checkbox2"> <label for="checkbox2" id='checkbox_l'>
+                            Are you available to work in mumbai?</label>
+                    </div>
+                    <a class='form1_next' id='next' onclick='checkFields()'>NEXT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="contentFoot">
+        <div class="footb1">
+            <div class="connect">
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+    
+            </div>
+            <div class="info">
+                <div>
+                    <div>BY PLACE</div>
+                    <hr>
+                    <div>Internships In Mumbai</div>
+                    <div>Internships In Delhi</div>
+                    <div>Internships In Bangalore</div>
+                    <div>Internships In Pune</div>
+                    <div>Internships In Hyderabad</div>
+                </div>
+                <div>
+                    <div>BY PROFILE</div>
+                    <hr>
+                    <div>Marketing Internships</div>
+                    <div>Business Development Internships</div>
+                    <div>Content Writing Interships</div>
+                    <div>Graphic Design Internships</div>
+                    <div>HR internships</div>
+                    <div>Engineering Internships</div>
+                </div>
+                <div>
+                    <div>BY TYPE</div>
+                    <hr>
+                    <div>Full Time Internships</div>
+                    <div>Part Time Internships</div>
+                    <div>Work From Home Internships</div>
+                </div>
+            </div>
+        </div>
+        <div class="footb2">
+            <div>Find Intership</div>
+            <div>Post Intership</div>
+            <div>Courses</div>
+            <div>Terms&Conditions</div>
+            <div>Privacy Polivy</div>
+            <div>Contact us</div>
+            <div>About us</div>
+            <div>Site us</div>
+        </div>
+        <hr>
+        <div class="footb3">
+            © 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.
+        </div>
+    
+    </div>
+
+
+</body>
+
+</html>
+
+<script src='../scripts/submit1.js'></script>
+<script src="../scripts/sideTab.js"></script>
+

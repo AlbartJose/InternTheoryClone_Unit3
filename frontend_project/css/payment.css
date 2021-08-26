@@ -1,0 +1,183 @@
+  #container {
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        background-color:yellowgreen;
+        align-items: center;
+        flex-direction:row;
+        font-family: "lato",ubuntu,helvetica,sans-serif;
+       
+
+        
+    }
+    #paymentBox{
+        z-index: 10000;
+        width:21.875rem;
+        height:31.25rem;background-color:rgb(223, 30, 46);
+        
+    }
+    .topBox{
+        display: flex;
+        flex-direction:row;
+        width:21.875rem;
+        height:fit-content;
+        color:white;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:6.25rem;
+        height:6.25rem;
+        border-radius:5px;
+        background-color:white;
+        object-fit:contain;
+        margin-left: 1.563rem;
+        margin-top: 1.563rem;
+
+    }
+    .logo img{
+        width:5rem;
+        height:5rem;
+    }
+    .top_head{
+        font-family: 'Roboto','Ubuntu', sans-serif;
+        font-size:1.25rem;
+        overflow:hidden;
+        margin-left: 1.25rem;
+        
+    }
+    .top_head p:nth-of-type(2){
+        margin-top:-21px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        opacity:0.8;
+    }
+    #amount{
+        font-size:1.5rem !important;
+        margin-top: 10px !important;
+        
+    }
+    #content{
+        background-color:white;
+        width:100%;
+        height:25rem;
+        margin-top:0.625rem;
+        overflow-y:scroll;
+        overflow-x: hidden;
+    }
+    .content_heading{
+        margin-left:1.875rem;
+        font-size:0.875rem;
+        color:rgb(136, 136, 136);
+    }
+    .button_1{
+        display: flex;
+        flex-direction: column;
+        text-align:left;
+        margin-left:2.688rem;
+    }
+    .button_vector{
+        display: flex;
+        float: left;
+        margin-top:0.5rem;
+     }
+     .button_vector_1{
+        display: flex;
+        float: left;
+        margin-top: 1px;
+     }
+    .payment_type{
+        font-size:18px;
+        font-weight:400;
+        margin: 0px;
+        color:rgb(37, 37, 37);
+        margin-top:5px;
+    }
+    .card_options{
+        margin: 0px;
+        margin-top: -0625rem;
+        color:gray;
+    }
+    .content_button{
+        width:90%;
+        margin-left: 5%;
+        background-color:white;
+        border: 1px solid rgb(212, 212, 212);
+        cursor:pointer;
+        
+    }
+    .content_button_1{
+        width:90%;
+        height:3.438rem;
+        margin-left: 5%;
+        background-color:white;
+        border: 1px solid rgb(212, 212, 212);
+        cursor:pointer;
+        
+    }
+    .card{
+        width:21.875rem;
+        height:11.25rem;
+        display:grid;
+        grid-template: 'a a b'
+                       'c c d';
+    }
+
+    .card input{
+        height:1.875rem;
+        width:12.5rem;
+        margin:0px;
+        margin-top:0px;
+        border:0px;
+        border-bottom: 1px solid rgb(75, 75, 75);
+    }
+    .card label{
+        font-family: 'Roboto','Ubuntu', sans-serif;
+        font-size:0.813rem;
+        color:rgb(59, 59, 59);
+
+    }
+    
+    .div1{
+        grid-area: a
+    }
+    .div2{
+        grid-area: b
+    }
+    .div3{
+        grid-area: c
+    }
+    .div4{
+        grid-area: d
+    }
+    #credit_card{
+        margin-top:0625rem;
+    }
+    .checkbox{
+        margin-top:0625rem;
+        width:1.25rem;
+        height:1.25rem;
+        float:left;
+        background-color:rgb(223, 30, 46);
+    }
+
+    .remember{
+        margin-top:0625rem;
+        color:rgb(66, 66, 66);
+    }
+    #checkout{
+        width:100%;
+        height:3.125rem;
+        background-color:rgb(223, 30, 46);
+        color:azure;
+        font-size: 1.563rem;
+        border:0px;
+        cursor:pointer;
+        margin-top:-30px;
+    }
+    
