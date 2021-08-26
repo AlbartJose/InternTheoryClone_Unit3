@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link href='/static/courses/cart_page.css' rel='stylesheet' type='text/css'>
+
+    <title>Online Courses | Intern Theory</title>
+
+</head>
+
+<body>
+
+
+        <div id="backgroundBlock">
+
+            <div class="container">
+                <div class="left">
+                    <div style="font-size: 20px; margin-left: 3%;margin-top: 3%;">Cart</div>
+                    <div id="cart_values" style="margin-top: 1%; margin-left: 3%;">
+
+                    </div>
+                    <div id="empty_cart">
+                        <input type="button" value="Empty Cart" id="emptyCart" onclick="empty_cart()">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="outerSizing">
+                        <div class="amount_line">
+                            <div>Amount</div>
+                            <div style="width: 56%;"></div>
+                            <div id="rate"></div>
+                        </div>
+                        <div class="cgst_line" style="border-bottom: 2px solid rgb(165, 162, 162);">
+                            <div><span> CGST9%</span></div>
+                            <div style="width: 57%;"></div>
+                            <div>₹3600</div>
+                        </div>
+                        <div class="sgst_line">
+                            <div>SGST9%</div>
+                            <div style="width: 57%;"></div>
+                            <div>₹3600</div>
+                        </div>
+                        <div class="total_line">
+                            <div>Total:</div>
+                            <div style="width: 61%;"></div>
+                            <div id="total"></div>
+                        </div>
+                        <div style="margin:10%"></div>
+                        <div class="coupon_code" style="border-bottom: 1px solid rgb(116, 112, 112);">
+                            <label for="couponcode">
+                                <input id="couponcode" type="text" placeholder="Coupon Code"
+                                    style="outline: none; border: none;font-weight: 300; font-size: 15px;">
+                            </label>
+                        </div>
+                        <div id="goBtn">
+                            <input type="button" value="GO" id="goInput" onclick="ApplyPromo()">
+                        </div>
+                        <div></div>
+                        <div id="checkoutBtn">
+                            <input type="button" value="CHECKOUT" id="checkoutInput" onclick="checkOut()">
+                        </div>
+                        <div class="emiAppend"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+
+</html>
+
+<script src="/static/courses/cart_page.js"></script>

@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>All course page</title>
+    <link rel="stylesheet" href="/static/courses/online_courses.css" />
+  </head>
+  <body>
+    <h1 class="green-text"><%= pageTitle %></h1>
+  </body>
+  </html> -->
+  
+  
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+      />
+      <link href="/static/courses/styleHeadFoot.css" rel="stylesheet" />
+      <link rel="stylesheet" href="/static/courses/online_courses.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>
+      <link href="../css/homeSigned.css" rel="stylesheet">
+      <title>Online Courses | Intern Theory</title>
+    </head>
+    
+    <body>
+      
+      <div class="content" id="con1">
+        <div id="block_1">
+          <div class="block1_img">
+            <img
+            src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png"
+            width="100%"
+            />
+          </div>
+        </div>
+        <div id="block_2">
+          <div class="block2_1">
+            <div class="block2_1_1">
+              <h6>Certified Online Courses</h6>
+              <p>
+                Upgrade your skills with Intern Theory's online learning platform.
+                Enrol for any certified online courses and get a step ahead of
+                competition. Select from a range of skill based online courses and
+                kickstart your career.
+              </p>
+            </div>
+          </div>
+          <div id="grid">
+          <% courses.forEach((course) => { %>
+            <div class="block2_2">
+              <div class="multidiv">
+                <div class="image">
+                  <img
+                  class="jss1148 jss1149"
+                  src= <%= course.img_src %>
+                  height="140"
+                  title="IT Starter Pack (4 Courses)"
+                  />
+                </div>
+                <div class="hp">
+                  <div class="courseHead">
+                    
+                    <h2><%= course.name %></h2>
+                  </div>
+                  <div class="coursePara">
+                    <p><%= course.description %></p>
+                  </div>
+                </div>
+                <div class="wrapEmiAndRates">
+                  <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                    ">₹<%= course.xprice %></span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 15999</span> 
+              </div>
+              <div class="emiThing">
+                <p><%= course.emi_text%></p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="itstark(event)"><span id="itAdd1">ADD TO CART</span></a>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+        
+        
+        
+      </div>
+      
+    </div>
+          
+
+  </body>
+  
+</html>
+
+<script src="/static/courses/side_tab.js"></script>
