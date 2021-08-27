@@ -12,8 +12,13 @@ router.get("", crudController(KnowMore).getOne)
 router.patch("", crudController(KnowMore).updateOne)
 router.delete("", crudController(KnowMore).deleteOne)
 
+router.get("/index", async(req,res)=>{
+    res.render("courses/index.ejs")
+})
+
 router.get("/:idCourse", async (req,res) => {
     const knowMore = await KnowMore.findOne({courseId:{$eq:req.params.idCourse}}).populate('courseId').exec()
+    console.log(knowMore)
     var img = knowMore.courseId.img_src
     var xprice = knowMore.courseId.xprice
     var price = knowMore.courseId.price
@@ -33,7 +38,6 @@ router.get("/:idCourse", async (req,res) => {
         xprice,
         img,
         scourses
-        
     })
 })
 

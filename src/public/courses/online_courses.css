@@ -6,6 +6,11 @@
     width: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 
 .block2_1,.block2_2{
@@ -33,20 +38,12 @@
     padding: 0%;
     
 }
-.multidiv{
-    max-width: 23%;
-    background-color: white;
-    border: 0.3rem;
-    margin: 1%;
-    border-radius: 0.3rem;
-    
-}
 .image > img{
     background: cover;
     border-radius: 5px;
     height: 8.75rem;
     width: 100%;
-
+    
 }
 .hp{
     padding: 0.5rem;
@@ -76,8 +73,8 @@
     border-bottom: .5px dashed silver;
 }
 .wrapRates{
- display: inline-block;
- margin-left: 47%;
+    display: inline-block;
+    margin-left: 47%;
 }
 .emiThing > p{
     width: 100%;
@@ -117,12 +114,25 @@
     background-color:#DF1E2E;;
     color: white;
 }
-.block2_2{
+
+.multidiv{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 23%;
+    background-color: white;
+    border: 0.3rem;
+    margin: 1%;
+    border-radius: 0.3rem;
+    
 }
 #shopCart > div{
     width: 89% !important;
     height: fit-content !important;
 } 
+
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
