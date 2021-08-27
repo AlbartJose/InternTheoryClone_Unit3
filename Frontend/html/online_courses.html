@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="../css/styleHeadFoot.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/online_courses.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>
+    <link href="../css/homeSigned.css" rel="stylesheet">
+    <title>Online Courses | Intern Theory</title>
+  </head>
+ 
+  <body>
+
+    <div class="hbside1" id="hbsideid1">
+      <div>
+        <div class="hb1sidehead">
+          <div class="hb1">
+            <div class="hb1list pointer" id="openSide" onclick="document.getElementById('hbsideid1').style.display='none'">
+              <span class="material-icons">
+                menu
+              </span>
+    
+            </div>
+          </div>
+          <div class="hb2">
+            <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+          </div>
+        </div>
+        <div>
+          <a href="mainPage.html">
+            <div>
+              <span class="material-icons">
+                home
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Home
+            </div>
+          </a>
+        </div>
+    
+        <div>
+          <a href="internship.html">
+            <div>
+              <span class="material-icons">
+                view_list
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Internships
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="jobs.html">
+            <div>
+              <span class="material-icons">
+                work
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Jobs
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="company_register.html">
+            <div>
+              <span class="material-icons">
+                playlist_add
+              </span>
+    
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Post Internships
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="online_courses.html">
+            <div>
+              <span class="material-icons">
+                class
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Courses
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="contact.html">
+            <div>
+              <span class="material-icons">
+                call
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Contact Us
+            </div>
+          </a>
+        </div>
+        <hr>
+        <div onclick="toggleRegister()">
+          <a>
+            <div>
+              <span class="material-icons">
+                subject
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Register
+            </div>
+          </a>
+        </div>
+        <div id="regCom">
+          <a href="company_register.html">
+            <div>
+              <span class="material-icons">
+                business
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Company
+            </div>
+          </a>
+        </div>
+        <div id="regStu">
+          <a href="studentRegister_page.html">
+            <div>
+              <span class="material-icons">
+                person
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Student
+            </div>
+          </a>
+        </div>
+        <div onclick="toggleLogin()">
+          <a>
+            <div>
+              <span class="material-icons">
+                meeting_room
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Login
+            </div>
+          </a>
+        </div>
+        <div id="logCom">
+          <a href="login_page.html">
+            <div>
+              <span class="material-icons">
+                business
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Company
+            </div>
+          </a>
+        </div>
+        <div id="logStu">
+          <a href="login_page.html">
+            <div>
+              <span class="material-icons">
+                person
+              </span>
+            </div>
+            <div class="hb1sideheaddivadiv">
+              Student
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header sticky" id="myHeader">
+      <div>
+        <div class="hb1">
+          <div class="hb1list pointer" onclick="document.getElementById('hbsideid1').style.display='block'">
+            <span class="material-icons">
+              menu
+            </span>
+    
+          </div>
+        </div>
+        <div class="hb2">
+          <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+        </div>
+        <div class="hb3"></div>
+        <div class="hb4">
+          <div id="shopCart" class="pointer">
+              <div id="cartNum"></div>
+            <span class="material-icons">
+              shopping_cart
+            </span>
+    
+    
+          </div>
+          <div class="signedUserPr">
+            <div>
+              <div class="imgLogin"><img
+                  src="https://www.clipartmax.com/png/middle/269-2691367_user-login-person-man-enter-comments-logo.png">
+              </div>
+              <div>LogedIn</div>
+              <div class="logout"></div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="content" id="con1">
+      <div id="block_1">
+        <div class="block1_img">
+          <img
+            src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png"
+            width="100%"
+          />
+        </div>
+      </div>
+      <div id="block_2">
+        <div class="block2_1">
+          <div class="block2_1_1">
+            <h6>Certified Online Courses</h6>
+            <p>
+              Upgrade your skills with Intern Theory's online learning platform.
+              Enrol for any certified online courses and get a step ahead of
+              competition. Select from a range of skill based online courses and
+              kickstart your career.
+            </p>
+          </div>
+        </div>
+        <div class="block2_2">
+          <div class="multidiv">
+            <div class="image">
+              <img
+                class="jss1148 jss1149"
+                src="https://assets.interntheory.com/creative/courses/thumbnails/it.jpg"
+                height="140"
+                title="IT Starter Pack (4 Courses)"
+              />
+            </div>
+            <div class="hp">
+              <div class="courseHead">
+                <h2>IT Starter Pack (4 Courses)</h2>
+              </div>
+              <div class="coursePara">
+                <p>
+                  Learn the most demanded skills in the IT industry today. Sig
+                  ...
+                </p>
+              </div>
+            </div>
+            <div class="wrapEmiAndRates">
+              <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                  ">₹ 32999</span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 15999</span> 
+              </div>
+              <div class="emiThing">
+                <p>EMI Starting at ₹ 915/month</p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="itstark(event)"><span id="itAdd1">ADD TO CART</span></a>
+            </div>
+          </div>
+          <div class="multidiv">
+            <div class="image">
+              <img
+                class="jss1148 jss1149"
+                src="https://assets.interntheory.com/creative/courses/thumbnails/finthumbnail.jpg"
+                height="140"
+                title="IT Starter Pack (4 Courses)"
+              />
+            </div>
+            <div class="hp">
+              <div class="courseHead">
+                <h2>Finance Starter Pack </h2>
+              </div>
+              <div class="coursePara">
+                <p>Learn the most demanded skills in the Finance industry today ...
+                </p>
+              </div>
+            </div>
+            <div class="wrapEmiAndRates">
+              <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                  ">₹ 23999</span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 11999</span> 
+              </div>
+              <div class="emiThing">
+                <p>EMI Starting at ₹ 687/month</p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="finance(event)"><span id="itAdd2">ADD TO CART</span></a>
+            </div>
+          </div>
+          <div class="multidiv">
+            <div class="image">
+              <img
+                class="jss1148 jss1149"
+                src="https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png"
+                height="140"
+                title="IT Starter Pack (4 Courses)"
+              />
+            </div>
+            <div class="hp">
+              <div class="courseHead">
+                <h2>Digital Marketing Course</h2>
+              </div>
+              <div class="coursePara">
+                <p>Learn the art of digital marketing. Sign up for this o....
+                </p>
+              </div>
+            </div>
+            <div class="wrapEmiAndRates">
+              <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                  ">₹ 11999</span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 5999</span> 
+              </div>
+              <div class="emiThing">
+                <p>EMI Starting at ₹ 343/month</p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="digital(event)"><span id="itAdd3">ADD TO CART</span></a>
+            </div>
+          </div>
+          <div class="multidiv">
+            <div class="image">
+              <img
+                class="jss1148 jss1149"
+                src="https://assets.interntheory.com/creative/courses/thumbnails/stock-market-course.png"
+                height="140"
+                title="IT Starter Pack (4 Courses)"
+              />
+            </div>
+            <div class="hp">
+              <div class="courseHead">
+                <h2>Stock Market Course
+                </h2>
+              </div>
+              <div class="coursePara">
+                <p>
+                    Learn how to trade and invest in stock markets. Enrol for th ...
+                </p>
+              </div>
+            </div>
+            <div class="wrapEmiAndRates">
+              <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                  ">₹ 32999</span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 15999</span> 
+              </div>
+              <div class="emiThing">
+                <p>EMI Starting at ₹ 343/month</p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="stock()"><span id="itAdd4">ADD TO CART</span></a>
+            </div>
+          </div>
+          <div class="multidiv">
+            <div class="image">
+              <img
+                class="jss1148 jss1149"
+                src="https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png"
+                height="140"
+                title="IT Starter Pack (4 Courses)"
+              />
+            </div>
+            <div class="hp">
+              <div class="courseHead">
+                <h2>Data Analytics </h2>
+              </div>
+              <div class="coursePara">
+                <p>
+                    Learn data science online. Join this online data analytics c ...
+                </p>
+              </div>
+            </div>
+            <div class="wrapEmiAndRates">
+              <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                  ">₹ 11999</span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 5999</span> 
+              </div>
+              <div class="emiThing">
+                <p>EMI Starting at ₹ 343/month</p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="data(event)"><span id="itAdd5">ADD TO CART</span></a>
+            </div>
+          </div>
+          <div class="multidiv">
+            <div class="image">
+              <img
+                class="jss1148 jss1149"
+                src="https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png"
+                height="140"
+                title="IT Starter Pack (4 Courses)"
+              />
+            </div>
+            <div class="hp">
+              <div class="courseHead">
+                <h2>Web Development Course</h2>
+              </div>
+              <div class="coursePara">
+                <p>
+                    Learn the art of web design and web development. Join this o ...
+                </p>
+              </div>
+            </div>
+            <div class="wrapEmiAndRates">
+              <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                  ">₹ 7999</span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 3999</span> 
+              </div>
+              <div class="emiThing">
+                <p>EMI Starting at ₹ 229/month</p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="web(event)"><span id="itAdd6"> ADD TO CART</span></a>
+            </div>
+          </div>
+          <div class="multidiv">
+            <div class="image">
+              <img
+                class="jss1148 jss1149"
+                src="https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png"
+                height="140"
+                title="IT Starter Pack (4 Courses)"
+              />
+            </div>
+            <div class="hp">
+              <div class="courseHead">
+                <h2>Android App Development</h2>
+              </div>
+              <div class="coursePara">
+                <p>
+                  Learn the most demanded skills in the IT industry today. Sig
+                  ...
+                </p>
+              </div>
+            </div>
+            <div class="wrapEmiAndRates">
+              <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                  ">₹ 32999</span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 15999</span> 
+              </div>
+              <div class="emiThing">
+                <p>EMI Starting at ₹ 915/month</p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="android(event)"><span id="itAdd7">ADD TO CART</span></a>
+            </div>
+          </div>
+          <div class="multidiv">
+            <div class="image">
+              <img
+                class="jss1148 jss1149"
+                src="https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png"
+                height="140"
+                title="IT Starter Pack (4 Courses)"
+              />
+            </div>
+            <div class="hp">
+              <div class="courseHead">
+                <h2>IT Starter Pack-2 (2 Courses)</h2>
+              </div>
+              <div class="coursePara">
+                <p>
+                  Learn the most demanded skills in the IT industry today. Sig
+                  ...
+                </p>
+              </div>
+            </div>
+            <div class="wrapEmiAndRates">
+              <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                  ">₹ 32999</span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 15999</span> 
+              </div>
+              <div class="emiThing">
+                <p>EMI Starting at ₹ 915/month</p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="itstart2(event)"><span id="itAdd8"> ADD TO CART</span></a>
+            </div>
+          </div>
+          <div class="multidiv">
+            <div class="image">
+              <img
+                class="jss1148 jss1149"
+                src="https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png"
+                height="140"
+                title="IT Starter Pack (4 Courses)"
+              />
+            </div>
+            <div class="hp">
+              <div class="courseHead">
+                <h2>Advanced Excel Course</h2>
+              </div>
+              <div class="coursePara">
+                <p>
+                  Learn the most demanded skills in the IT industry today. Sig
+                  ...
+                </p>
+              </div>
+            </div>
+            <div class="wrapEmiAndRates">
+              <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                  ">₹ 32999</span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 15999</span> 
+              </div>
+              <div class="emiThing">
+                <p>EMI Starting at ₹ 915/month</p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="advanced(event)"><span id="itAdd9">ADD TO CART</span></a>
+            </div>
+          </div>
+          <div class="multidiv">
+            <div class="image">
+              <img
+                class="jss1148 jss1149"
+                src="https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png"
+                height="140"
+                title="IT Starter Pack (4 Courses)"
+              />
+            </div>
+            <div class="hp">
+              <div class="courseHead">
+                <h2>R Programming Course</h2>
+              </div>
+              <div class="coursePara">
+                <p>
+                  Learn the most demanded skills in the IT industry today. Sig
+                  ...
+                </p>
+              </div>
+            </div>
+            <div class="wrapEmiAndRates">
+              <div class="wrapRates">
+                <span style="
+                    text-decoration: line-through;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.54);
+                    font-size: 0.775rem;
+                  ">₹ 32999</span>
+                <span style="    font-size: 1.1rem;
+                font-weight: 700;
+                padding-left: 3px;
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 15999</span> 
+              </div>
+              <div class="emiThing">
+                <p>EMI Starting at ₹ 915/month</p>
+                <span class="material-icons" aria-hidden="true" style="font-size: 20px; margin-left: 85%; color: rgb(255, 179, 38);padding: 0;">help_outline</span>
+              </div>
+            </div>
+            <div class="knowAndAdd">
+              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
+              <a href="" role="button" class="second" onclick="rpro(event)"><span id="itAdd10">ADD TO CART</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentFoot">
+      <div class="footb1">
+        <div class="connect">
+          <div><span class="material-icons"> facebook </span></div>
+          <div><span class="material-icons"> facebook </span></div>
+          <div><span class="material-icons"> facebook </span></div>
+          <div><span class="material-icons"> facebook </span></div>
+        </div>
+        <div class="info">
+          <div>
+            <div>BY PLACE</div>
+            <hr />
+            <div>Internships In Mumbai</div>
+            <div>Internships In Delhi</div>
+            <div>Internships In Bangalore</div>
+            <div>Internships In Pune</div>
+            <div>Internships In Hyderabad</div>
+          </div>
+          <div>
+            <div>BY PROFILE</div>
+            <hr />
+            <div>Marketing Internships</div>
+            <div>Business Development Internships</div>
+            <div>Content Writing Interships</div>
+            <div>Graphic Design Internships</div>
+            <div>HR internships</div>
+            <div>Engineering Internships</div>
+          </div>
+          <div>
+            <div>BY TYPE</div>
+            <hr />
+            <div>Full Time Internships</div>
+            <div>Part Time Internships</div>
+            <div>Work From Home Internships</div>
+          </div>
+        </div>
+      </div>
+      <div class="footb2">
+        <div>Find Intership</div>
+        <div>Post Intership</div>
+        <div>Courses</div>
+        <div>Terms&Conditions</div>
+        <div>Privacy Polivy</div>
+        <div>Contact us</div>
+        <div>About us</div>
+        <div>Site us</div>
+      </div>
+      <hr />
+      <div class="footb3">© 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.</div>
+    </div>
+
+  </body>
+  
+</html>
+
+<script src="../scripts/online_courses.js"></script>
+<script src="../scripts/sideTab.js"></script>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+<style>
+    .card{
+        width:350px;
+        height:120px;
+        border: 1px solid black;
+        display:grid;
+        grid-template: 'a a b '
+                   'c c d';
+        
+    }
+    .card input{
+        height:30px;
+        width:200px;
+        margin:0px;
+        margin-top:0px;
+        
+        
+
+    }
+    
+    .div1{
+        grid-area: a
+    }
+    .div2{
+        grid-area: b
+    }
+    .div3{
+        grid-area: c
+    }
+    .div4{
+        grid-area: d
+    }
+    
+    
+
+</style>
+
+<body>
+    <div class = 'card'>
+    <div class = 'div1'>
+    <label for='cardNumber'>Card Number</label><br>
+    <input type="text" id="cardNumber" placeholder="Card Number">
+    </div>
+    <div class = 'div2'>
+    <label for = 'expiry_date' style="width:100px;">Expiry</label><br>
+    <input type="text" id="expiry_date" placeholder="Expiry Date" style="width:60px;">
+    </div>
+    <div class = 'div3'>
+    <label for = 'card_name'>Card Name</label><br>
+    <input type="text" id="card_name" placeholder="Card Name">
+    </div>
+    <div class = 'div4'>
+    <label for = 'cvv'>Cvv</label><br>
+    <input type="text" id="cvv" placeholder="Cvv" style="width:60px;">
+    </div>
+    
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+</script>

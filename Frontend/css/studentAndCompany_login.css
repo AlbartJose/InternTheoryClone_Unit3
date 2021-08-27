@@ -1,0 +1,152 @@
+#example{
+    width: 100%;
+    background-image: url("https://assets.interntheory.com/creative/Web-Banner.jpg");
+    background-size: cover;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main_block{
+    width: 40%;
+    height: fit-content;
+    background-color: white;
+    margin: 2%;
+    border-radius: 5px;
+}
+.main_block1,.form_buildingBlock{
+    width: 90%;
+    margin: 5%;
+}
+.student_company > div{
+    width: 48%;
+    text-align: center;
+    margin: 1%;
+}
+.first_block > h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.s_btn> h2{
+    margin: 0 0 0 0;
+    padding: 2%;
+    color: rgba(0, 0, 0, 0.54);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+.c_btn> h2{
+    margin: 0 0 0 0;
+    padding: 2%;
+    color: rgba(0, 0, 0, 0.54);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+.second_block{
+    border: 1px dashed red;
+    border-radius: 5px;
+    margin: 0 0 0 0;
+    padding: 0px;
+    background-color: rgb(252, 239, 241);
+}
+.second_block > p{
+    margin: 1% 1%;
+    color: #3C4858;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.01071em;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(48, 77, 240);
+}
+.third_block,.fourth_block{
+    margin: 1%;
+}
+div > h6{
+    margin: 0 0 0 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+label > input {
+    border: none;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+}
+#form .email{
+    font: inherit;
+    color: currentColor;
+    width: 90%;
+    border: 0;
+    margin: 2%;
+    padding: 2%;
+    display: block;
+    min-width: 0;
+    box-sizing: content-box;
+    background: none;
+    -webkit-tap-highlight-color: transparent;
+    border-bottom: 1px solid slategrey;
+}
+#form .password{
+    font: inherit;
+    color: currentColor;
+    width: 90%;
+    border: 0;
+    margin: 2%;
+    padding: 2%;
+    display: block;
+    min-width: 0;
+    box-sizing: content-box;
+    background: none;
+    -webkit-tap-highlight-color: transparent;
+    border-bottom: 1px solid slategrey;
+}
+div > span{
+    margin: 1%;
+}
+label > a{
+    margin-left: 35%;
+    font-size: 15px;
+}
+label > span{
+    font-weight: 100 !important;
+    font-size: 13px;
+}
+.crf{
+    margin-bottom: 1%;
+}
+#form{
+    
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.dha {
+    font-size: 14px;
+    margin:3% 10%;
+}
+.dha > span{
+    color: silver;
+    
+}
+.loginButton > input{
+    border: 1px solid red;
+    width: 100% !important;
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    font-weight: 550;
+    font-size: 0.875rem;
+    height: 35px;
+    cursor: pointer;
+}
+.third_block{
+    margin-top: 2% !important;
+    padding: 1% !important;
+    block-size:30px;
+}
