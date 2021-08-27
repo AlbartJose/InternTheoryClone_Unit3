@@ -1,0 +1,30 @@
+<!-- first run the server on localhost port 2222 -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Google Auth Demo</title>
+  <meta name="google-signin-client_id" content="738936597446-8ajaj6rpgacscvgbfrs9ep3q53scs6kp.apps.googleusercontent.com"> <!-- this piece of code connect the client and check client id -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script> 
+</head>
+<body>
+  <h1>Welcome to the Demo</h1>
+  <div class="g-signin2" data-onsuccess="onSignIn"></div> <!-- class is required put it in a div where your button is..-->
+  <button onclick="signOut()">Sign out</button> <!-- to sign out-->
+
+</body>
+</html>
+<script>
+    function onSignIn(googleUser) {
+      // get user profile information
+      console.log(googleUser.getBasicProfile()) // this will give you user info object and you can see it in console
+    }
+    function signOut() {
+  gapi.auth2.getAuthInstance().signOut().then(function() {
+    console.log('user signed out')
+  })
+}
+
+  </script>
