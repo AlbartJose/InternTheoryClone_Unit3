@@ -1,0 +1,96 @@
+#mainBlock{
+    width: 100%;
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0%;
+    padding: 0%;
+    background-color: whitesmoke;
+}
+#block_1 > img{
+    min-width: 100%;
+    margin-left: -8px;
+    margin-top: -8px;
+    max-height: 368px;
+    image-rendering: auto;
+}
+#block_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#makeitcen{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#leftColumn{
+    width: 70%;
+}
+#rightColumn{
+    width: 30%;
+}
+
+.block1 > div{
+    padding: 15px;    
+    border-radius: .5rem;
+    margin: .9rem;
+    background-color: #fff;
+}
+.block2 > div{
+    padding: 15px;
+    margin: .9rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.keyFeatures {
+    display:flex;
+    flex-wrap: wrap;
+    border-bottom: dashed rgb(46, 45, 45);
+    border-width: 1px;
+    font-weight: 600;
+    
+}
+.keyFeatures img{
+    width: 70px;
+    height: 70px;
+}
+.afterCourse img{
+    width: 70px;
+    height: 70px;
+}
+.afterCourse{
+    display:flex;
+    flex-wrap: wrap;
+    border-bottom: dashed rgb(46, 45, 45);
+    border-width: 1px;
+    font-weight: 600;
+}
+.group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+}
+div > .yellowIcon{
+    font-weight: 100 !important;
+    font-size: 24px !important;
+    color: rgb(51, 51, 51) !important;
+    padding: .3rem;
+    height: 1.5625rem;
+    border-left: 4px solid rgb(255, 179, 38);
+}
+.sblock{
+    padding: 15px;
+    border-bottom: 1px solid #999;
+}
+.sblock div{
+    margin-top: 5px;
+}
+.shead{
+    color: #087CDD;
+}
+.stext{
+    color: rgba(0,0,0,0.54)
+}

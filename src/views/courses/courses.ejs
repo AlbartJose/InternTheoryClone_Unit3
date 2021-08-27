@@ -1,15 +1,6 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <title>All course page</title>
-    <link rel="stylesheet" href="/static/courses/online_courses.css" />
-  </head>
-  <body>
-    <h1 class="green-text"><%= pageTitle %></h1>
-  </body>
-  </html> -->
-  
-  
+<!-- http://localhost:2222/courses/courses -->
+
+
   <!DOCTYPE html>
   <html>
     <head>
@@ -58,7 +49,7 @@
                   class="jss1148 jss1149"
                   src= <%= course.img_src %>
                   height="140"
-                  title="IT Starter Pack (4 Courses)"
+                  "
                   />
                 </div>
                 <div class="hp">
@@ -83,7 +74,7 @@
                 <span style="    font-size: 1.1rem;
                 font-weight: 700;
                 padding-left: 3px;
-                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ 15999</span> 
+                letter-spacing: -0.05em;color: rgba(0, 0, 0, 0.87);">₹ <%= course.price %></span> 
               </div>
               <div class="emiThing">
                 <p><%= course.emi_text%></p>

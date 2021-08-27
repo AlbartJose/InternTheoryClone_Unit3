@@ -1,0 +1,87 @@
+<!-- localhost:2222/knowMores/ -->
+
+
+<!DOCTYPE html>
+<head>
+    <title>knowMore page</title>
+    <link rel="stylesheet" href="/static/courses/knowMore.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="mainBlock">
+        <div id="block_1"><img srcset=<%= img %>></div>
+        <div id="block_2">
+            <div id="makeitcen"></div>
+            <div id="leftColumn">
+                <div class="block1">
+                    <div class="div">
+                        <div id="c_name"><h1><%= knowMores.course_name %></h1></div>
+                        <div id="c_para"><p><%= knowMores.course_para %></p></div>
+                    </div>
+                </div>
+                <div class="block2">
+                    <div>
+
+                        <div><p class="yellowIcon">Key Features</p></div>
+                        <div class="keyFeatures">
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/certified.png"></div><div>Certified</div></div>
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/study-at-your-own-time.png"></div><div>Study At Your Own Time</div></div>
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/study-at-your-own-time.png"></div><div>Learn from Industry Professionals</div></div>
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/study-more.png"></div><div>More Practice, Less Theory</div></div>
+                        </div>
+                        <div><p class="yellowIcon">What will a student get after the course?</p></div>
+                        <div class="afterCourse">
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/study-more.png"></div><div>Certificates to upgrade your resume</div></div>
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/internships.png"></div><div>Internship Assistance</div></div>
+                        </div>
+                        <div><p class="yellowIcon">Syllabus</p></div>
+                        <div class="syllabus">
+                            <% knowMores.syllabus.forEach((syllab) => { %>
+                               <% if(syllab != "null") { %>
+                                <div class="sblock">
+                                    <div class="shead"><%= syllab %></div>
+                                    <div class="stext">Click here to see the syllabus</div>
+                                </div>
+                           <% }}) %>
+                        </div>
+                            
+                        </div>
+                    </div>
+                    
+            </div>
+            <div id="rigthColumn">
+                <div class="rblock1">
+                <div class="duration"><div>Duration <%= knowMores.duration %></div></div>
+                <div class="dottedLine"></div>
+                <div><div>₹<%= price %></div><div>₹<%= xprice %></div></div>
+                <div><button>Process to checkout</button></div>
+                <div>or</div>
+                <div><button>Enroll Now</button></div>
+            </div>
+            <div class="rblock2">
+                <div class="l">
+                    <div>Confused?</div>
+                    <div>Confused?</div>
+                    <div>Leave us a query and will call you soon.</div>
+                </div>
+                <div class="r">
+                    <div class="r2img"><img src="" alt=""></div>
+                </div>
+            </div>
+            <div class="rblock3">
+                <div><div>Similar Courses</div>
+                <% scourses.forEach((similar)=>{ %>
+                    <div><%= similar.name %></div>
+                    <div><div><a href="">Know More</a></div><div>₹<%= similar.xprice %></div><div>₹<%= similar.price %></div></div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+            
+        </body>
+        </html>
