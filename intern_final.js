@@ -42,15 +42,11 @@
 
 
 var internFinal = {
-    personalDetails: {
-        name: document.getElementById("name"), //  name is same as username we can connect both to the user name
-        username: document.getElementById("username"),
-        usernnumber: document.getElementById("usernnumber")
-    },
     form1: {
         firstName: document.getElementById("first_name").value,
         lastName: document.getElementById("last_name").value,
         email: document.getElementById("email").value,
+        mobile: document.getElementById("mobile"),
         dob: document.getElementById("dob").value,
         gender: document.getElementById("gender").value,
         about: document.getElementById("about").value
@@ -65,8 +61,8 @@ var internFinal = {
         experience_type: document.getElementById("experience_type").value,
         job_role: document.getElementById("job_role").value,
         experience_duration: document.getElementById("experience_duration").value,
-        responsibility: document.getElementById("responsibility").value,
-        edu_level: document.getElementById("edu_level").value,
+        responsibility: document.getElementById("responsibility").value
+
     },
     skills: {
         skills = document.getElementsById("skills").value,
