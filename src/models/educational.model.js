@@ -34,3 +34,5 @@ const EducationalDetail = mongoose.model('educationalDetail', educationalDetailS
 
 module.exports = EducationalDetail;
 
+
+
