@@ -63,6 +63,10 @@ function Login() {
       res.json().then(function (res) {
         console.log("res", res);
         if (res.valid) {
+          var sign = JSON.parse(localStorage.getItem("loginValid"));
+          sign.signed = true;
+          sign.userId = res.user._id;
+          localStorage.setItem("loginValid", JSON.stringify(sign));
           window.location.href = "mainPage.html";
         }
         else alert("You have entered the wrong uersname or password, Try again");

@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
     signedIn: { type: Boolean, default: false },
     internshipIds: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "intership",
+        ref: 'internship',
     }],
     jobIds: [{
         type: mongoose.Schema.Types.ObjectId,

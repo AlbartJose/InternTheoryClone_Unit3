@@ -242,7 +242,13 @@ async function runProgram() {
         block_7.append(back);
 
         function final() {
-            window.location.href = 'submit1.html';
+            //window.location.href = 'submit1.html';
+            var sign = JSON.parse(localStorage.getItem("loginValid"));
+            if (sign.signed) {
+                window.location.href = 'submit1.html';
+            } else {
+                window.open("http://127.0.0.1:5500/Unit3/Week5/Day2/frontend_project/html/login_page.html");
+            }
         }
 
     }

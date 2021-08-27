@@ -5,6 +5,10 @@ const connect = require('./configs/db');
 
 //CRUD
 const userController = require("./controllers/user.controller");
+const internshipController = require("./controllers/internship.controller");
+const internDetailController = require("./controllers/internDetail.controller");
+const educationalDetailController = require("./controllers/educational.controller");
+const courseController = require("./controllers/course.controller")
 
 const app = express();
 app.use(express.json());
@@ -32,6 +36,11 @@ var cors = require('cors');
 app.use(cors({ origin: '*' }));
 
 app.use("/users", userController);
+app.use("/internship", internshipController);
+app.use("/internDetail", internDetailController);
+app.use("/educationalDetail", educationalDetailController);
+app.use("/courses", courseController)
+
 
 //Start the server
 const start = async () => {

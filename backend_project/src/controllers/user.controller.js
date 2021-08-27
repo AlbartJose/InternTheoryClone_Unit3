@@ -40,9 +40,45 @@ router.patch("/logout", async function (req, res) {
             return res.status(201).send(item);
         }
     } catch (err) {
-        return res.status(400).json({ status: "User signed out" });
+        return res.status(400).send(err.message);
     }
 });
+
+router.patch("/internship/:id1/:id2", async function (req, res) {
+    try {
+        var idUser = req.params.id1;
+        var idIntership = req.params.id2;
+        const item = await User.findByIdAndUpdate(idUser, { $push: { internshipIds: idIntership } }, { new: true }).lean().exec();
+        const user = await User.findById(idUser).lean().exec();
+        return res.status(201).send(user);
+    } catch (err) {
+        return res.status(400).send(err.message);
+    }
+});
+
+router.patch("/course/:id1/:id2", async function (req, res) {
+    try {
+        var idUser = req.params.id1;
+        var idCourse = req.params.id2;
+        const item = await User.findByIdAndUpdate(idUser, { $push: { courseIds: idCourse } }, { new: true }).lean().exec();
+        const user = await User.findById(idUser).lean().exec();
+        return res.status(201).send(user);
+    } catch (err) {
+        return res.status(400).send(err.message);
+    }
+});
+router.patch("/educational/:id1/:id2", async function (req, res) {
+    try {
+        var idUser = req.params.id1;
+        var idIEducational = req.params.id2;
+        const item = await User.findByIdAndUpdate(idUser, { educationDetailsId: idIEducational }, { new: true }).lean().exec();
+        const user = await User.findById(idUser).lean().exec();
+        return res.status(201).send(user);
+    } catch (err) {
+        return res.status(400).send(err.message);
+    }
+});
+
 
 
 router.post("/", crudController(User).post);

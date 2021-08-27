@@ -1,106 +1,108 @@
-// var name = document.getElementById("name"); //  name is same as username we can connect both to the user name
-
-// var username = document.getElementById("username");
-// var usernnumber = document.getElementById("usernnumber");
-// //-------------form1-----------------------------------------
-// let firstName = document.getElementById("first_name").value;
-// let lastName = document.getElementById("last_name").value;
-// let email = document.getElementById("email").value;
-// let dob = document.getElementById("dob").value;
-// let gender = document.getElementById("gender").value;
-// let about = document.getElementById("about").value;
-
-// //-------------education details-----------------------------------------
-
-// let edu_level = document.getElementById("edu_level").value;
-// let inst_name = document.getElementById("inst_name").value;
-// let degree = document.getElementById("degree").value;
-// let edu_year = document.getElementById("edu_year").value;
-
-// //-------------experience details-----------------------------------------
-
-
-// let experience_type = document.getElementById("experience_type").value;
-// let job_role = document.getElementById("job_role").value;
-// let experience_duration = document.getElementById("experience_duration").value;
-// let responsibility = document.getElementById("responsibility").value;
-// let edu_level = document.getElementById("edu_level").value;
-
-// //-------------skills------------------------------------------------------
-
-// let skills = document.getElementsById("skills").value;
-// let preference = document.getElementsById("preference").value;
-// let hobbies = document.getElementsById("hobbies").value;
-// let achievements = document.getElementsById("achievements").value;
-
-// //-------------address------------------------------------------------------
-
-// let address = document.getElementsById("address").value;
-// let city = document.getElementsById("city").value;
-// let pincode = document.getElementsById("pincode").value;
-// let languages = document.getElementsById("languages").value;
-
-
-
-
-var internId = String(localStorage.getItem('interDetailNew'));
-console.log(internId);
-
-async function api() {
-    let internDetail = await fetch(`http://localhost:2222/internDetail/${internId}`)
-    let data = await internDetail.json();
-    console.log(data);
-    return data;
-}
-
-
-
-var div = document.getElementById("final_submit");
-div.addEventListener("click", () => {
-    console.log("try");
-    window.location.href = "dashboard.html"
-})
-
-var internFinal = {
-    personalDetails: {
-        name: document.getElementById("name"), //  name is same as username we can connect both to the user name
-        username: document.getElementById("username"),
-        usernnumber: document.getElementById("usernnumber")
+var sign = JSON.parse(localStorage.getItem("loginValid"));
+fetch(`http://localhost:2222/users/${sign.userId}`, {
+    method: 'GET',
+    headers: {
+        "Content-Type": "application/json",
     },
-    form1: {
+})
+    .then(function (res) {
+        res.json().then(function (res) {
+            console.log("res", res);
+            var pName = document.getElementById("nameProf");
+            var pEmail = document.getElementById("emailProf");
+            var pPh = document.getElementById("phProf");
+            pName.innerHTML = res.firstname + " " + res.lastname;
+            pEmail.innerHTML = res.email;
+            pPh.innerHTML = res.mobile_no;
+        })
+    })
+    .catch(function (err) {
+        console.log("err:", err);
+    });
+
+
+var user = JSON.parse(localStorage.getItem("loginValid"));
+var internId = localStorage.getItem("interDetailNew");
+
+var sub = document.getElementById("final_submit");
+sub.addEventListener("click", () => {
+    var internFinal = {
         firstName: document.getElementById("first_name").value,
         lastName: document.getElementById("last_name").value,
         email: document.getElementById("email").value,
+        mobile: document.getElementById("mobile").value,
         dob: document.getElementById("dob").value,
         gender: document.getElementById("gender").value,
-        about: document.getElementById("about").value
-    },
-    educationalDetails: {
+        about: document.getElementById("about").value,
         edu_level: document.getElementById("edu_level").value,
         inst_name: document.getElementById("inst_name").value,
         degree: document.getElementById("degree").value,
         edu_year: document.getElementById("edu_year").value,
-    },
-    experienceDetails: {
-        experience_type: document.getElementById("experience_type").value,
+        experience_type: document.getElementById("experienceType").value,
         job_role: document.getElementById("job_role").value,
         experience_duration: document.getElementById("experience_duration").value,
         responsibility: document.getElementById("responsibility").value,
-        edu_level: document.getElementById("edu_level").value,
-    },
-    skills: {
         skills: document.getElementById("skills").value,
         preference: document.getElementById("preferences").value,
         hobbies: document.getElementById("hobbies").value,
         achievements: document.getElementById("achievements").value,
-    },
-    address: {
         address: document.getElementById("address").value,
         city: document.getElementById("city").value,
         pincode: document.getElementById("pincode").value,
         languages: document.getElementById("Languages").value
     }
-}
 
+    console.log("Hi");
+    body = JSON.stringify(internFinal);
+    console.log("internFinal:", internFinal);
 
+    fetch("http://localhost:2222/educationalDetail/", {
+        method: 'POST',
+        body: body,
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+        .then(function (res) {
+            res.json().then(function (res) {
+                console.log(res);
+                fetch(`http://localhost:2222/users/internship/${user.userId}/${internId}`, {
+                    method: 'PATCH',
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                })
+                    .then(function (res) {
+                        res.json().then(function (res) {
+                            console.log("res", res);
+
+                        })
+                    })
+                    .catch(function (err) {
+                        console.log("err:", err);
+                    });
+
+                fetch(`http://localhost:2222/users/educational/${user.userId}/${res._id}`, {
+                    method: 'PATCH',
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                })
+                    .then(function (res) {
+                        res.json().then(function (res) {
+                            console.log("res", res);
+
+                        })
+                    })
+                    .catch(function (err) {
+                        console.log("err:", err);
+                    });
+                window.location.href = "dashboard.html";
+
+            })
+        })
+        .catch(function (err) {
+            console.log("err:", err);
+        });
+})
 

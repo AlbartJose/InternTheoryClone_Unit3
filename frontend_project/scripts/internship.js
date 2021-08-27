@@ -288,91 +288,13 @@ async function api() {
 }
 
 
-
-
-
-
-// var internships = [
-//     {
-//         img: 'https://assets.interntheory.com/uploads/company/logos/35be96426ec8eeb524ab288d9f7e665a8c6113a2.jpg',
-//         course: 'Jr Sales Engineer',
-//         companyName: 'Allwave AV',
-//         type: 'Full Time',
-//         category: 'Business Development',
-//         city: 'mumbai',
-//         stipend: '8000 per month'
-
-//     },
-//     {
-//         img: 'https://assets.interntheory.com/uploads/company/logos/9a1b5a51b4a3fea4078b0e13e877a8ec422fdd21.jpg',
-//         course: 'PHP Developer - Intern',
-//         companyName: 'Bitpastel Solution Pvt Ltd',
-//         type: 'Full Time',
-//         category: 'Business Development',
-//         city: 'Kolkata',
-//         stipend: '7500 - 10000 per month'
-
-//     },
-//     {
-//         img: 'https://assets.interntheory.com/uploads/company/companylogos/acc313217760c271982fd8292660d06162307a7c/88a004f3139e489ab07e9c6a0474a679d86b4e57com.png',
-//         course: 'Wordpress Web Developer',
-//         companyName: 'Allwave AV',
-//         type: 'Part Time',
-//         category: 'Business Development',
-//         city: 'Bangalore',
-//         stipend: '8000 per month'
-
-//     },
-//     {
-//         img: 'https://assets.interntheory.com/uploads/company/logos/d2014eb04767ce811420b47d91c3c99219a774b4.jpg',
-//         course: 'Content Writer Intern',
-//         companyName: 'Leadstart Publishing',
-//         type: 'Full Time',
-//         category: 'Content Writing',
-//         city: 'Chennai',
-//         stipend: 'None'
-
-//     },
-//     {
-//         img: 'https://assets.interntheory.com/uploads/company/logos/f26feb9e33fcce49c4d5634126ef72232c8c18ed.jpg',
-//         course: 'Video Editor/Graphic Designer',
-//         companyName: 'UrbanGuru',
-//         type: 'Part Time',
-//         category: 'Business Development',
-//         city: 'Hyderabad',
-//         stipend: '1500 per month'
-
-//     },
-//     {
-//         img: 'https://assets.interntheory.com/uploads/company/logos/a74d88544322279c33db28830bff100d0d6e12f6.jpg',
-//         course: 'Social Media & Content Creation Intern',
-//         companyName: 'Strategy Wanted',
-//         type: 'Work From Home',
-//         category: 'Business Development',
-//         city: 'Delhi',
-//         stipend: '8000 per month',
-
-//     },
-
-// ];
 var rightBox = document.getElementById('rightbox');
 var i = 0;
 
-if (localStorage.getItem('internships') == null) {
-    (localStorage.setItem('internships', JSON.stringify(internships)));
-}
 
 async function runProgram() {
-    let internships = await api();  // this is where iam getting the data
-
-
-
-
-
     dispSortItems();
     sortAll();
-
-
 
 }
 
