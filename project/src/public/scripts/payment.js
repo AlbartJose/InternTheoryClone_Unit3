@@ -12,6 +12,7 @@ async function check() {
             },
         })
         let dataNew = await res.json();
+        localStorage.removeItem("cart_courses");
         window.location.href = "/interntheory/courses/cart/payment/success";
     }
 
