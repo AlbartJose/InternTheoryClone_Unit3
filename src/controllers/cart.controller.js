@@ -3,6 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 const CartItem = require("../models/cart.model");
+const Course = require("../models/course.model");
 
 const crudController = require("./crud.controller")
 router.post("", crudController(CartItem).post);
@@ -21,6 +22,8 @@ router.get("/cartItems", async (req, res) => {
       return res.status(400).send(err.msg);
     }
 });
+
+
 // router.post("/", async (req, res) => {
 //   try {
 //     const cartItem = await CartItem.create(req.body);

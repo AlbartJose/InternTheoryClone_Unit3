@@ -31,7 +31,6 @@ router.get("/:idCourse", async (req,res) => {
             }
         })
     })
-    console.log(scourses)
     return res.render("courses/knowMore.ejs",{
         knowMores:knowMore,
         price,

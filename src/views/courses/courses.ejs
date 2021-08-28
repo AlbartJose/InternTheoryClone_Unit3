@@ -9,11 +9,10 @@
       rel="stylesheet"
       />
       <link href="/static/courses/styleHeadFoot.css" rel="stylesheet" />
-      <link rel="stylesheet" href="/static/courses/online_courses.css" />
+      <link rel="stylesheet" href="/static/courses/courses.css" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>
-      <link href="../css/homeSigned.css" rel="stylesheet">
       <title>Online Courses | Intern Theory</title>
     </head>
     
@@ -43,7 +42,6 @@
           <div id="grid">
           <% courses.forEach((course) => { %>
             <div class="block2_2">
-              <div class="multidiv">
                 <div class="image">
                   <img
                   class="jss1148 jss1149"
@@ -82,23 +80,20 @@
               </div>
             </div>
             <div class="knowAndAdd">
-              <a href="" role="button" class="first"><span>KNOW MORE</span></a>
-              <a href="" role="button" class="second" onclick="itstark(event)"><span id="itAdd1">ADD TO CART</span></a>
+              <a href="http://localhost:2222/knowMores/<%=course._id%>" class="first"  role="button"><span>KNOW MORE</span></a>
+              <a href="https://localhost:2222/courses/<%=course._id %>" role="button" class="second"><span id="itAdd1">ADD TO CART</span></a>
             </div>
-          </div>
         </div>
         <% }) %>
       </div>
+      
         
-        
-        
-      </div>
       
     </div>
-    <%- include('footer') -%>        
+    
+  </div>
+  <%- include('footer') -%>        
+</body>
 
-  </body>
-  
 </html>
-
 <script src="/static/courses/side_tab.js"></script>

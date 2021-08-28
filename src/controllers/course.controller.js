@@ -25,6 +25,39 @@ router.get("/courses", async (req,res) => {
     }
 })
 
+// for add to cart local storage
+// router.get("/:id", async(req,res) => {
+//     try{
+//         const courses = await Course.find().lean().exec()
+//         const course = await Course.find({_id:{$eq:req.params.id}}).lean().exec()
+//         let cart = {
+//             name: course.name,
+//             xprice: course.xprice,
+//             price: course.price
+//         }
+//         let arr;
+//         arr = localStorage.getItem("cart");
+        
+//         if (arr == null) {
+//             arr = [];   
+//         } else {
+//             arr = JSON.parse(localStorage.getItem("cart"));
+//         }
+//         const nam = cart.name;
+//         const found = arr.some(el => el.name === nam);
+//       if (found) {
+//           return;
+//       }
+//       arr.push(cart);
+//       localStorage.setItem("cart", JSON.stringify(arr));
+//       return res.render("courses/courses.ejs",{
+//                 courses:courses
+//       })
+//     } 
+//     catch(err){
+//       return res.status(404).send(err.msg)
+//     }
+//   })
 
 
 module.exports = router;
