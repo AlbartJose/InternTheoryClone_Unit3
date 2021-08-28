@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content=
+		"This is a demo of Web integration
+		of Razorpay in NodeJS"
+		author="Mr. Twinkle Sharma" />
+	<title>Razorpay Web-Integration</title>
+</head>
+
+<body>
+		<button id="pay-button" >checkout </button>
+
+</body>
+
+</html>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var options = {
+	"key": "rzp_test_YTdY9PLBRMuWtO",
+	"amount": "100",
+	"currency": "INR",
+	"name": "INTERN THEORY",
+	"description": "Pay & Checkout",
+		"image": "https://pbs.twimg.com/profile_images/1140555105999056896/r4VpveBr_400x400.jpg",
+	"handler": function (response){
+		console.log(response)
+		alert("This step of Payment Succeeded");
+	},
+	"prefill": {
+		"contact":"9876543210",
+		"name": "Twinkle Sharma",
+		"email": "smtwinkle@gmail.com" 
+	},
+	"notes" : {
+		"description":"na",
+		"language":"na",
+		"access":"na"
+	},
+	"theme": {
+		"color": "#DF1E2E"
+	}
+};
+var razorpayObject = new Razorpay(options);
+console.log(razorpayObject);
+razorpayObject.on('payment.failed', function (response){
+		console.log(respone);
+		alert("This step of Payment Failed");
+});
+	
+document.getElementById('pay-button').onclick = function(e){
+	razorpayObject.open();
+	e.preventDefault();
+}
+</script>
