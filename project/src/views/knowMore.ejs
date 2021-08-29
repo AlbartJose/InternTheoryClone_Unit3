@@ -1,0 +1,405 @@
+<!-- localhost:2222/knowMores/ -->
+
+
+<!DOCTYPE html>
+<head>
+    <title>knowMore page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styleHeadFoot.css">
+    <link rel="stylesheet" href="/static/css/homeSigned.css">
+    <link rel="stylesheet" href="/static/css/knowMore.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hbside1" id="hbsideid1">
+        <div>
+            <div class="hb1sidehead">
+                <div class="hb1">
+                    <div class="hb1list pointer" id="openSide"
+                        onclick="document.getElementById('hbsideid1').style.display='none'">
+                        <span class="material-icons">
+                            menu
+                        </span>
+    
+                    </div>
+                </div>
+                <div class="hb2">
+                    <a href="/interntheory/home"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+                </div>
+            </div>
+            <div>
+                <a href="/interntheory/home">
+                    <div>
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Home
+                    </div>
+                </a>
+            </div>
+            <div id="dashboardSideTab">
+                <a href="/interntheory/dashboard">
+                    <div>
+                        <span class="material-icons">
+                            dashboard
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Dashboard
+                    </div>
+                </a>
+            </div>
+    
+            <div>
+                <a href="/interntheory/internships">
+                    <div>
+                        <span class="material-icons">
+                            view_list
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/interntheory/jobs">
+                    <div>
+                        <span class="material-icons">
+                            work
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Jobs
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/interntheory/register/company">
+                    <div>
+                        <span class="material-icons">
+                            playlist_add
+                        </span>
+    
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Post Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/interntheory/courses">
+                    <div>
+                        <span class="material-icons">
+                            class
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Courses
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/interntheory/contact">
+                    <div>
+                        <span class="material-icons">
+                            call
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Contact Us
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div onclick="toggleRegister()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            subject
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Register
+                    </div>
+                </a>
+            </div>
+            <div id="regCom">
+                <a href="/interntheory/register/company">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="regStu">
+                <a href="/interntheory/register/student">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+            <div onclick="toggleLogin()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            meeting_room
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Login
+                    </div>
+                </a>
+            </div>
+            <div id="logCom">
+                <a href="/interntheory/login">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="logStu">
+                <a href="/interntheory/login">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header sticky" id="myHeader">
+            <div>
+                <div class="hb1">
+                    <div class="hb1list pointer" onclick="document.getElementById('hbsideid1').style.display='block'">
+                        <span class="material-icons">
+                            menu
+                        </span>
+        
+                    </div>
+                </div>
+                <div class="hb2">
+                    <a href="/interntheory/home"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+                </div>
+                <div class="hb3"></div>
+                <div class="hb4">
+                    <div id="shopCart" class="pointer">
+                        <div>
+                            <div id="cartNum">1</div>
+                        </div>
+                        <span class="material-icons">
+                            shopping_cart
+                        </span>
+        
+        
+                    </div>
+                    <div class="signedUserPr" id="signin">
+        
+        
+                    </div>
+        
+                </div>
+            </div>
+    </div>
+    
+    <div id="mainBlock">
+        <div id="block_1"><img srcset=<%= img %>></div>
+        <div id="makeitcen">
+        <div id="block_2">
+            <div id="leftColumn">
+                <div class="block1">
+                    <div class="div">
+                        <div id="c_name"><h1><%= knowMores.course_name %></h1></div>
+                        <div id="c_para"><p><%= knowMores.course_para %></p></div>
+                    </div>
+                </div>
+                <div class="block2">
+                    <div>
+
+                        <div><p class="yellowIcon">Key Features</p></div>
+                        <div class="keyFeatures">
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/certified.png"></div><div>Certified</div></div>
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/study-at-your-own-time.png"></div><div>Study At Your Own Time</div></div>
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/study-at-your-own-time.png"></div><div>Learn from Industry Professionals</div></div>
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/study-more.png"></div><div>More Practice, Less Theory</div></div>
+                        </div>
+                        <div><p class="yellowIcon">What will a student get after the course?</p></div>
+                        <div class="afterCourse">
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/study-more.png"></div><div>Certificates to upgrade your resume</div></div>
+                            <div class="group"><div class="iconDiv"><img src="https://assets.interntheory.com/creative/features_icon/internships.png"></div><div>Internship Assistance</div></div>
+                        </div>
+                        <div><p class="yellowIcon">Syllabus</p></div>
+                        <div class="syllabus">
+                            <% knowMores.syllabus.forEach((syllab) => { %>
+                               <% if(syllab != "null") { %>
+                                <div class="sblock">
+                                    <div class="shead"><%= syllab %></div>
+                                    <div class="stext">Click here to see the syllabus</div>
+                                </div>
+                           <% }}) %>
+                        </div>
+                            
+                        </div>
+                    </div>
+                    
+            </div>
+            <div id="rigthColumn">
+            <div class="rblock1">
+                <div class="duration"><span>Duration</span><strong><%= knowMores.duration %></strong></div>
+                <div class="dottedLine"></div>
+                <div class="xp"><div class="bigone">₹ <%= price %></div><div class="smallone">₹ <%= xprice %></div></div>
+                <div class="pbtn"><button onclick="cart_add(`<%= knowMores.courseId._id %>`)">Add to cart</button></div>
+                <div class="or">or</div>
+                <div class="ebtn"><button>Enroll Now</button></div>
+            </div>
+            <div class="rblock2">
+                <div class="l">
+                    <div><strong>Confused?</strong></div>
+                    <div class="cp">Leave us a query and will call you soon.</div>
+                </div>
+                <div class="r">
+                    <div class="r2img"><img src="https://assets.interntheory.com/creative/haveQuestio.png"></div>
+                </div>
+            </div>
+            <div class="rblock3">
+                <div ><div class="sc">Similar Courses</div>
+                <% scourses.forEach((similar)=>{ %>
+                   <div id="blockcourses"> <div><%= similar.name %></div>
+                    <div id="kxp"><div><a class="newa" href="">Know More</a></div><div id="">₹ <%= similar.xprice %></div><div class="big">₹ <%= similar.price %></div></div>
+                </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="contentFoot">
+            <div class="footb1">
+                <div class="connect">
+                    <div><span class="material-icons">
+                            facebook
+                        </span>
+                    </div>
+                    <div><span class="material-icons">
+                            facebook
+                        </span>
+                    </div>
+                    <div><span class="material-icons">
+                            facebook
+                        </span>
+                    </div>
+                    <div><span class="material-icons">
+                            facebook
+                        </span>
+                    </div>
+        
+                </div>
+                <div class="info">
+                    <div>
+                        <div>BY PLACE</div>
+                        <hr>
+                        <div>Internships In Mumbai</div>
+                        <div>Internships In Delhi</div>
+                        <div>Internships In Bangalore</div>
+                        <div>Internships In Pune</div>
+                        <div>Internships In Hyderabad</div>
+                    </div>
+                    <div>
+                        <div>BY PROFILE</div>
+                        <hr>
+                        <div>Marketing Internships</div>
+                        <div>Business Development Internships</div>
+                        <div>Content Writing Interships</div>
+                        <div>Graphic Design Internships</div>
+                        <div>HR internships</div>
+                        <div>Engineering Internships</div>
+                    </div>
+                    <div>
+                        <div>BY TYPE</div>
+                        <hr>
+                        <div>Full Time Internships</div>
+                        <div>Part Time Internships</div>
+                        <div>Work From Home Internships</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footb2">
+                <div>Find Intership</div>
+                <div>Post Intership</div>
+                <div>Courses</div>
+                <div>Terms&Conditions</div>
+                <div>Privacy Polivy</div>
+                <div>Contact us</div>
+                <div>About us</div>
+                <div>Site us</div>
+            </div>
+            <hr>
+            <div class="footb3">
+                © 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.
+            </div>
+        
+    </div>
+
+</body>
+</html>
+
+<script src="/static/scripts/sideTab.js"></script>
+<script>
+
+    function cart_add(item){
+
+        var cartNum = document.getElementById("cartNum");
+        let arr = localStorage.getItem('cart_courses');
+        if (arr == null) {
+            arr = [];
+        } else {
+            arr = JSON.parse(localStorage.getItem('cart_courses'));
+        }
+        if (arr.includes(item)) return;
+        arr.push(item);
+
+        cartNum.innerHTML = arr.length;
+        localStorage.setItem('cart_courses', JSON.stringify(arr));
+
+    }
+</script>
+
+<script>
+
+    var shopCart = document.getElementById("shopCart");
+    shopCart.addEventListener("click", () => {
+        var user = JSON.parse(localStorage.getItem("loginValid"));
+        if (user.signed) {
+            window.location.href = "/interntheory/courses/cart";
+        } else {
+            window.open("/interntheory/login");
+        }
+
+    })
+</script>

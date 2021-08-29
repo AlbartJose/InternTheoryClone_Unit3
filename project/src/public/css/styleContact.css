@@ -1,0 +1,106 @@
+.fa {
+  padding: 5px;
+  font-size: 1.25rem;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.contactb1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.625rem;
+}
+.contactb1 > div {
+  width: 40%;
+  padding: 0.625rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.contactb1 > div > img {
+  width: 100%;
+  height: 34.375rem;
+}
+.contactb1head {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.contactinfo {
+  width: 100%;
+}
+.contactinfo > form > div {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+.contactinpb1 {
+  margin-top: 0.625rem;
+  padding: 5px 0px 5px 0px;
+  border: none;
+  font-size: 1.25rem;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+.contactinpb2 {
+  font-size: 13px;
+  color: red;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+.contactMessage {
+  height: 3.75rem;
+}
+.contactsubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactsubmit > button {
+  background-color: #df1e2e;
+  padding: 10px 16px 10px 16px;
+  font-size: 1rem;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.contactsubmit > button:hover {
+  opacity: 0.7;
+}
+.contactSocial {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 6.25rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}

@@ -1,0 +1,241 @@
+#mainBlock {
+  width: 100%;
+  font-family: "Roboto", sans-serif !important;
+  margin: 0%;
+  padding: 0%;
+  background-color: whitesmoke;
+}
+#block_1 {
+  width: 100%;
+  height: 368px;
+}
+#block_1 > img {
+  min-width: 100%;
+  margin-left: -8px;
+  max-height: 368px;
+  image-rendering: auto;
+}
+#block_2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 80%;
+}
+
+#leftColumn {
+  width: 70%;
+}
+#rightColumn {
+  width: 30%;
+}
+
+.block1 > div {
+  padding: 15px;
+  border-radius: 0.5rem;
+  margin: 0.9rem;
+  background-color: #fff;
+}
+.block2 > div {
+  padding: 15px;
+  margin: 0.9rem;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.keyFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: dashed rgb(46, 45, 45);
+  border-width: 1px;
+  font-weight: 600;
+}
+.keyFeatures img {
+  width: 70px;
+  height: 70px;
+}
+.afterCourse img {
+  width: 70px;
+  height: 70px;
+}
+.afterCourse {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: dashed rgb(46, 45, 45);
+  border-width: 1px;
+  font-weight: 600;
+}
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50%;
+}
+div > .yellowIcon {
+  font-weight: 100 !important;
+  font-size: 24px !important;
+  color: rgb(51, 51, 51) !important;
+  padding: 0.3rem;
+  height: 1.5625rem;
+  border-left: 4px solid rgb(255, 179, 38);
+}
+.sblock {
+  padding: 15px;
+  border-bottom: 1px solid #999;
+}
+.sblock div {
+  margin-top: 5px;
+}
+.shead {
+  color: #087cdd;
+}
+.stext {
+  color: rgba(0, 0, 0, 0.54);
+}
+#rigthColumn {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.rblock1,
+.rblock2,
+.rblock3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 0.9rem;
+  background-color: #fff;
+  margin: 0.5rem;
+  padding: 16px !important;
+}
+.duration {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed black;
+}
+.duration > span {
+  font-weight: 200;
+  padding-right: 0.4rem;
+}
+.xp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-top: 0.8rem;
+}
+.xp .bigone {
+  font-size: 2rem;
+  margin-right: 0.6rem;
+  color: rgb(223, 30, 46);
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0.02rem;
+}
+.xp > .smallone {
+  text-decoration: line-through;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+}
+.pbtn button {
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  line-height: 1.75;
+  width: 100%;
+  border-radius: 4px;
+  border: transparent;
+  background-color: rgb(223, 30, 46);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.or {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.ebtn button {
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  line-height: 1.75;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgb(223, 30, 46);
+  background-color: #fff;
+  color: rgb(223, 30, 46);
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 69%;
+}
+.r2img > img {
+  height: 92px;
+}
+.rblock2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cp {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01071em;
+}
+.sc {
+  color: #3c4858;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01071em;
+  border-bottom: 1px solid #3c4858;
+}
+#kxp {
+  color: #3c4858;
+  display: flex;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01071em;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-bottom: 1px solid #3c4858;
+  justify-content: space-between;
+  align-items: center;
+}
+#blockcourses {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #3c4858;
+  font-size: 0.9rem;
+}
+.newa {
+  text-decoration: none;
+  margin-right: 9rem;
+  color: #087cdd;
+}
+.big {
+  font-size: 1.4rem;
+}
+#xp {
+  text-decoration: line-through;
+}
+#makeitcen {
+  display: flex;
+  justify-content: center;
+}

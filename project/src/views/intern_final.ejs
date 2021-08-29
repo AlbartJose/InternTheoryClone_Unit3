@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon"
+        href="https://drive.google.com/file/d/1RRpKl9lt4r2DJEnePaQ7UxXVh9Y9JwJR/view?usp=sharing" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='/static/css/internship.css' rel='stylesheet' type='text/css'>
+    <link href="/static/css/styleHeadFoot.css" rel="stylesheet">
+    <link href="/static/css/homeSigned.css" rel="stylesheet">
+
+    <title></title>
+</head>
+<style>
+    #main{
+            height:1600px;
+        
+        }
+    #rightbox{
+        
+        height:1600px;
+     
+        }
+    #user_data {
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 2px 2px 0 rgba(80, 80, 80, 0.2), 0 2px 5px 0 rgba(83, 83, 83, 0.19);
+        background-color: white;
+    }
+
+    #rightHeading {
+        width: 900px;
+        height: 80px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        background-color: white;
+    }
+
+    #user_data a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        text-align: center;
+        padding-top: 5px;
+        background-color: rgb(2, 107, 245);
+        color: white;
+        border: 0px;
+        box-shadow: 0 0px 0px;
+        border-radius: 5px;
+        font-weight: bold;
+        float: left;
+        height: 20px;
+        width: 90px;
+        margin-left: 105px;
+        margin-top: 5px;
+        text-decoration: none;
+    }
+
+    #user_data p:first-of-type {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        float: left;
+        clear: both;
+        margin-left: 109px;
+        margin-top: 5px;
+        font-size: 14px;
+        color: rgb(153, 153, 153);
+
+    }
+    #form1{
+        width:90%;
+        height:150px;
+        margin-left: 5%;
+        float:left;
+        border: 1px solid black;
+        clear: both;
+    }
+
+    .data {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        text-align: left;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    .heading1 {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        float: left;
+        font-size: 20px;
+        margin-top: 25px;
+        margin-left: 25px;
+
+    }
+    .heading1 a{
+        font-size: 22px;
+        font-weight:600;
+    }
+    .vertical_line {
+        margin-top: 47px;
+        height: 60px;
+        width: 0%;
+        border: 1px solid black;
+        margin-left:-524px;
+        background-color: rgb(3, 3, 3);
+        float: left;
+    }
+
+    .circle {
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        float: left;
+        margin-left: 2%;
+        margin-top: 18px;
+        background-color: rgb(2, 107, 245);
+    }
+    #form_alert {
+        float: left;
+        margin-top: -230px;
+        margin-left: 35px;
+        font-size: 11px;
+        color: #DF1E2E;
+        visibility: hidden;
+    }
+    .circle2{
+        background-color: rgb(2, 107, 245);
+        margin-top:69px;
+        margin-left:-10px;
+    }
+    #application_form,#application_form_2{
+        font-size:15px;
+        width:230px;
+        margin-top:70px;
+        margin-left:20px;
+        color:rgb(0, 0, 0);
+
+    }
+    #application_form_2{
+        width:500px;
+        margin-top: 19px;
+        margin-left: 13px;
+        float:left;
+        
+    }
+    .final_box_1{
+        width:90%;
+        height:410px;
+        
+        float:left;
+        clear:both;
+        margin-left: 5%;
+    }
+    .final_box_2{
+        width:90%;
+        height:550px;
+        
+        margin-left: 5%;
+        margin-top:10px;
+        
+        clear:both;
+    
+    
+    }
+    .final_box_3{
+        width:800px;
+        height:350px;
+        margin-left: 5%;
+        margin-top: 281px;
+        margin-left: -403px;
+        float:left;
+
+      
+    
+    }
+    .final_box_1_c{
+        width:60%;
+        height:100%;
+        
+        margin-left:20%;
+    }
+    .final_box_2_c{
+        width:48%;
+        height:100%;
+        float:left;
+        margin:0%;
+        margin-left: 1%;
+        
+    }
+    .box2_red{
+        border-right: 3px solid #DF1E2E;
+
+    }
+    .final_box_3_c_1,.final_box_2_c_2{
+        width:48%;
+        height:100%;
+        margin:0%;
+        margin-left: 1%;
+        margin-right:10px;
+        border:none;
+        border-right: 3px solid #DF1E2E;
+        float:left;
+    }
+    #addImage{
+        width:30px;
+        height:30px;
+        border-radius: 50%;
+        background-color:#DF1E2E;
+        border: 0px;
+        margin-top: 0px;
+        margin-left: -19px;
+    }
+    .final_box_1_c img{
+        margin-left: 40%;
+        margin-top:20px;
+    }
+    .label{
+        font-size:12px;
+    
+    }
+    .form_1_i{
+        margin-top:10px;
+        margin-left:30px;
+        float:left;
+    }
+    .form_1_i input{
+        height:35px;
+        width: 200px;
+        border:none;
+        border-bottom: 1px solid rgb(43, 43, 43);
+        font-size:15px;
+        font-weight:100;
+        
+
+    }
+    .form_1_i_even input{
+        height:35px;
+        width: 200px;
+        border:none;
+        border-bottom: 1px solid rgb(43, 43, 43);
+        font-size:15px;
+        font-weight:100;
+            
+    }
+    .form_1_i_even{
+        margin-top:-57px;
+        margin-left: 280px;
+        float: left;
+
+    }
+    .form_1_about{
+        float:left;
+        margin-top:10px;
+        margin-left:30px;
+    }
+    .form_1_about input{
+        width:400px;
+        height:30px;
+        border:0px solid black;
+        border-bottom: 1px solid rgb(104, 104, 104);
+    }
+    /* .final_box_2{
+        display:flex;
+        justify-content:center;
+        align-content: center;
+    } */
+    .final_box_2_heading{
+        font-size:25px;
+        float:left;
+        margin-top:0px;
+    }
+    
+    .final_label{
+        float:left;
+        font-size:12px;
+        margin:0px;
+    }
+    #edu_level,#exp_details,#inst_name,#degree,#edu_year,#experienceType,#job_role,#experience_duration,#responsibility,#skills,#preferences,#achievements,#achievements,#hobbies,#address,#city,#pincode,#Languages{
+        height:35px;
+        width: 350px;
+        border:none;
+        border-bottom: 1px solid rgb(43, 43, 43);
+        font-size:15px;
+        
+        
+
+    }
+    .form_label{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .final_box_2_c_1{
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        margin-top: 10px;
+    }
+    .final_box_2_c_1 p{
+        margin-top: 5px;
+        margin-bottom:5px;
+        font-size: 16px;
+        color:rgb(105, 105, 105);
+    }
+    .final_add,.final_cancel{
+        width:65px;
+        height:35px;
+        background-color:#DF1E2E;
+        color:azure;
+        border: none;
+        border-radius:5px;
+        margin-left: 220px;
+        margin-top: 25px;
+
+    }
+    .final_cancel{
+        color:#087CDD;
+        background-color:white;
+        margin-top: -33px;
+        margin-right: 24px;
+        font-weight: bold;
+        float:right;
+
+
+    }
+    .final_submit{
+         width:85px;
+        height:35px;
+        background-color:#DF1E2E;
+        color:azure;
+        border: none;
+        border-radius:5px;
+        margin-right: 30px;
+        float:right; 
+        margin-top: 400px;
+
+    }
+    
+</style>
+
+<body>
+
+    <div class="hbside1" id="hbsideid1">
+        <div>
+            <div class="hb1sidehead">
+                <div class="hb1">
+                    <div class="hb1list pointer" id="openSide"
+                        onclick="document.getElementById('hbsideid1').style.display='none'">
+                        <span class="material-icons">
+                            menu
+                        </span>
+    
+                    </div>
+                </div>
+                <div class="hb2">
+                    <a href="/interntheory/home"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+                </div>
+            </div>
+            <div>
+                <a href="/interntheory/home">
+                    <div>
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Home
+                    </div>
+                </a>
+            </div>
+            <div id="dashboardSideTab">
+                <a href="/interntheory/dashboard">
+                    <div>
+                        <span class="material-icons">
+                            dashboard
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Dashboard
+                    </div>
+                </a>
+            </div>
+    
+            <div>
+                <a href="/interntheory/internships">
+                    <div>
+                        <span class="material-icons">
+                            view_list
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/interntheory/jobs">
+                    <div>
+                        <span class="material-icons">
+                            work
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Jobs
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/interntheory/register/company">
+                    <div>
+                        <span class="material-icons">
+                            playlist_add
+                        </span>
+    
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Post Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/interntheory/courses">
+                    <div>
+                        <span class="material-icons">
+                            class
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Courses
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="/interntheory/contact">
+                    <div>
+                        <span class="material-icons">
+                            call
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Contact Us
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div onclick="toggleRegister()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            subject
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Register
+                    </div>
+                </a>
+            </div>
+            <div id="regCom">
+                <a href="/interntheory/register/company">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="regStu">
+                <a href="/interntheory/register/student">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+            <div onclick="toggleLogin()">
+                <a>
+                    <div>
+                        <span class="material-icons">
+                            meeting_room
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Login
+                    </div>
+                </a>
+            </div>
+            <div id="logCom">
+                <a href="/interntheory/login">
+                    <div>
+                        <span class="material-icons">
+                            business
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Company
+                    </div>
+                </a>
+            </div>
+            <div id="logStu">
+                <a href="/interntheory/login">
+                    <div>
+                        <span class="material-icons">
+                            person
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Student
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header sticky" id="myHeader">
+        <div>
+            <div class="hb1">
+                <div class="hb1list pointer" onclick="document.getElementById('hbsideid1').style.display='block'">
+                    <span class="material-icons">
+                        menu
+                    </span>
+    
+                </div>
+            </div>
+            <div class="hb2">
+                <a href="/interntheory/home"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+            </div>
+            <div class="hb3"></div>
+            <div class="hb4">
+                <div id="shopCart" class="pointer">
+                    <div>
+                        <div id="cartNum">1</div>
+                    </div>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+    
+    
+                </div>
+                <div class="signedUserPr" id="signin">
+    
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="con1">
+
+    </div>
+    <div id='main1'>
+        <div id='leftbox1'>
+            <div id='user_data'>
+                <img src='https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?size=338&ext=jpg'
+                    style='width:100px;height:100px;margin-left: 100px;margin-top: 30px'>
+                <a href='/interntheory/dashboard'>MY DASHBOARD</a>
+                <p id="nameProf">Albart Jose</p>
+                <div
+                    style='height:-5px;width:230px;border:1px solid rgb(151, 151, 151);float:left;margin-left:35px;margin-bottom: 15px;'>
+                </div>
+                <p id="emailProf" class='data'>albartbtme@gmail.com</p>
+                <p id="phProf" class='data'>7408939361</p>
+            </div>
+        </div>
+        <div id='rightHeading'>
+            <p class='heading1'>Application for <a>Digital Marketing</a> for <a>MOONSTRUCK ADVERTISING</a></p>
+        </div>
+        <div id='rightbox1'>
+            <div id='form1'>
+                <div class='circle' ><i class='material-icons' style='font-size:15px;font-weight:800;text-align:center;padding-top:3px;'>done</i></div>
+                <p id='application_form_2'>Before you apply for internships please answer these questions</p>
+                <div class='vertical_line'>
+                    <div class='circle circle2'>2</div>
+                    <p id='application_form'>Application Form</p>
+            </div>
+            </div>
+            <div class=final_box_1>
+                <div class = final_box_1_c>
+                    <div>
+                    <img src='https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?size=338&ext=jpg' style='width:100px;height:100px;'>
+                    <button id='addImage' onclick='addImage()'><span class="material-icons" style="color:azure;text-align:center;font-size:15px;padding-top:4px"> add_a_photo</span></button>
+                    </div>
+                    <form class="form_user">
+                       <div class='form_1_i'> <label class='label' for="first_name">First Name</label><br><input id="first_name" placeholder="Enter Your First Name"/></div>
+                       <div class='form_1_i_even'> <label class='label' for="last_name">Last Name</label><br><input id="last_name" placeholder="Enter Your Last Name" /></div>
+                       <div class='form_1_i'> <label class='label' for="email">Email</label><br><input id="email" placeholder="Enter Your Email" /></div>
+                       <div class='form_1_i_even'> <label class='label' for="mobile">Mobile</label><br><input id="mobile" placeholder="Enter Your Mobile" /></div>
+                       <div class='form_1_i'> <label class='label' for="dob">Date of Birth</label><br><input id="dob" type="date" placeholder="Enter Your Date of Birth" /></div>
+                       <div class='form_1_i_even'> <label class='label' for="gender">Gender</label><br><input id="gender" placeholder="Gender" /></div>
+                    <div class='form_1_about'> <label class='label' for="about">About</label><br><input id="about" placeholder="About" /></div>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class=final_box_2>
+                <div class = 'final_box_2_c box2_red'>
+                    <p class='final_box_2_heading' style='margin-bottom: 0px;'>Education Details</p>
+                    <div>
+                    
+                        <div style='margin-top: 60px;' >
+
+                            <div class='final_box_2_c_1'><p>Level of Education *</p></div>
+                            <label for='edu_level'><input list='education' name='education' id='edu_level' placeholder='Select Level of Education*'></label>
+                            <datalist id='education'>
+                            <option value='Doctorate'>
+                            <option value='Post Graduation'>
+                            <option value='Graduation'>
+                            <option value='Diploma'>
+                            <option value='XII Equvivalent'>
+                            <option value='X Equvivalent'></option>
+                            <option value='Advanced Certificate Course'></option>
+                            <option value='Certificate Course'></option>
+                        </datalist>
+                        </div>
+                        <div>
+                            <div class='final_box_2_c_1'><p>Select Institute *</p></div>
+                        <label for='edu_level'>
+                            <input list='institution' name='institution' id='inst_name' placeholder='Select Institution*'>
+                        </label>
+                        <datalist id='institution'>
+                            <option value='Indian Institute of Technology Bombay'>
+                            <option value='Indian Institute of Technology Madras'>
+                            <option value='Amity University'>
+                            <option value='Anna University'>
+                            <option value='Birla Institute of Technology and Science'>
+                        </div>
+                        <div>
+                        <div class='final_box_2_c_1'><p>Degree *</p></div>
+                        <label for='edu_level'>
+                            <input list='education' name='education' id='degree' placeholder='Enter Degree*'>
+                        </label>
+                        
+                        </div>
+                        <div>
+                       <div class='final_box_2_c_1'><p>Select Year *</p></div>
+                        <label for='edu_year'>
+                            <input list='Year' name='year' id='edu_year'
+                                placeholder='Select College Year*'>
+                        </label>
+                        <datalist id='Year'>
+                            <option value='First Year'>
+                            <option value='Second Year'>
+                            <option value='Third Year'>
+                            <option value='Fourth Year'>
+                            <option value='Fifth Year'>
+                            <option value='Already Completed'>
+                        </datalist>
+                        </div>
+                        <div ><button class = 'final_add' id="edu_add">ADD</button></div>
+                        <button class='final_cancel'>CANCEL</button>
+                    
+                    </div>
+                </div>
+                <div class=final_box_2_c>
+                    <p class='final_box_2_heading'>Experience Details</p>
+                    <div>
+                    
+                        <div style='margin-top: 60px;'>
+                    
+                            <div class='final_box_2_c_1'>
+                                <p>Experience Type *</p>
+                            </div>
+                            <input list='experience_type' name='experience_type' id='experienceType' placeholder='Select Experience Type*'>
+                                <datalist id='experience_type'>
+                                <option value='Job'>
+                                <option value='Internship'>
+                                <option value='Project'>
+                                <option value='College Festival'>
+                                <option value='Committee Member'>
+                                <option value='Club'>
+                                
+                            </datalist>
+                            <div>
+                                
+                                <label for='edu_level'>
+                                    <input  name='job_role' id='job_role' placeholder='Title/Job Role'>
+                                </label>
+                                
+                            </div>
+                            <div>
+                                
+                                <label for='experience'>
+                                    <input id='experience_duration' placeholder='Experience in Months'>
+                                </label>
+                            
+                            </div>
+                            <div>
+                                <label for='responsibility'>
+                                    <input id='responsibility' placeholder='Responsibility'>
+                                </label>
+                                
+                            </div>
+                            <div><button class='final_add'>ADD</button></div>
+                            <button class='final_cancel'>CANCEL</button>
+                            
+                            </div>
+                   
+                
+            </div>
+            <div class=final_box_3>
+                <div class = final_box_3_c_1>
+                    <div class='final_box_2_c_1'><p>Skills *</p></div>
+                    <input id='skills' placeholder='Add Skills*'>
+                    <div class='final_box_2_c_1'>
+                        <p>Preference *</p>
+                    </div>
+                    <input id='preferences' placeholder='Preferences'>
+                    <div class='final_box_2_c_1'>
+                        <p>Hobbies</p>
+                    </div>
+                    <input id='hobbies' placeholder='Hobbies'>
+                    <div class='final_box_2_c_1'>
+                        <p>Achievements</p>
+                    </div>
+                    <input id='achievements' placeholder='Achievements'>
+                    
+                </div>
+                <div class=final_box_3_c_2>
+                    <div class='final_box_2_c_1'>
+                        <p>Address*</p>
+                    </div>
+                    <input id='address' placeholder='Address*'>
+                    <div class='final_box_2_c_1'>
+                        <p>City*</p>
+                    </div>
+                    
+                    <input id='city' placeholder='City'>
+                    <div class='final_box_2_c_1'>
+                        <p>Pincode*</p>
+                    </div>
+                    <input id='pincode' placeholder='Pincode'>
+                    <div class='final_box_2_c_1'>
+                        <p>Languages</p>
+                    </div>
+                    <input id='Languages' placeholder='Languages'>
+                </div>
+            </div>
+        </div>
+        <div>
+           <button id="final_submit" class='final_submit'>SUBMIT</button>
+        </div>
+
+
+</body>
+
+</html>
+<!-- 
+<script src='../scripts/submit1.js'></script> -->
+<script src='/static/scripts/intern_final.js'></script>
+<script src="/static/scripts/sideTab.js"></script>
