@@ -3,7 +3,7 @@ const router = express.Router();
 const Course = require("../models/course.model");
 const KnowMore = require("../models/knowMore.model");
 
-router.get("/index", async function (req, res) {
+router.get("/", async function (req, res) {
     try {
         return res.render("index");
 
@@ -125,7 +125,6 @@ router.get("/courses/cart", async function (req, res) {
 
 router.get("/courses/:idCourse", async (req, res) => {
     const knowMore = await KnowMore.findOne({ courseId: { $eq: req.params.idCourse } }).populate('courseId').exec();
-    console.log(knowMore);
     var img = knowMore.courseId.img_src
     var xprice = knowMore.courseId.xprice
     var price = knowMore.courseId.price

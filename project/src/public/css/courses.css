@@ -128,10 +128,10 @@
   margin: 1%;
   border-radius: 0.3rem;
 }
-#shopCart > div {
+/* #shopCart > div {
   width: 89% !important;
   height: fit-content !important;
-}
+} */
 
 #grid {
   display: flex;

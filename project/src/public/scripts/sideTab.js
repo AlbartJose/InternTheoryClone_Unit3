@@ -50,6 +50,8 @@ function login() {
     let login_div = document.getElementById("signin");
     login_div.innerHTML = null;
     if (k == 0) {
+        var dash = document.getElementById("dashboardSideTab");
+        dash.style.display = "none";
         let signin = document.createElement("a");
         signin.setAttribute("class", "sign");
         signin.innerHTML = `<div>SIGN IN</div>`;
@@ -58,6 +60,8 @@ function login() {
         })
         login_div.append(signin);
     } else if (k == 1) {
+        var dash = document.getElementById("dashboardSideTab");
+        dash.style.display = "block";
         let login = document.createElement("div");
         login.setAttribute("id", "login");
         login.innerHTML = `<span class="material-icons">account_circle</span>`;

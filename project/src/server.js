@@ -31,9 +31,14 @@ app.use("/courses", courseController)
 app.use("/interntheory", internController);
 app.use("/knowMores", knowMoreController)
 
+app.get("/", async function (req, res) {
+    try {
+        return res.render("index");
 
-
-
+    } catch (err) {
+        return res.status(400).send(err.message);
+    }
+});
 //Start the server
 const start = async () => {
     await connect();
