@@ -1,4 +1,13 @@
 async function check() {
+
+    var cardNum = document.getElementById("cardNumber").value;
+    var cardExp = document.getElementById("expiry_date").value;
+    var cardName = document.getElementById("card_name").value;
+    var cardcvv = document.getElementById("cvv").value;
+    if (cardNum == "" || cardExp == "" || cardName == "" || cardcvv == "") {
+        alert("Enter a Valid Card");
+        return;
+    }
     var user = JSON.parse(localStorage.getItem("loginValid"));
     //console.log(user);
     var courseArr = localStorage.getItem("cart_courses");
