@@ -2,6 +2,9 @@
 Here we go with the replica of the website InternTheory. With the skills and knowledge acquired over the period of 8 weeks, we were able to build the entire website with its functionality.
 We as a team worked on building the pre-login pages, login and signup pages and pages after login. Further, we focused on the functioning of the website and implemented features inludes sorting the courses, add to cart and Payment gateway which uses databases, server, promises, localstorage,... etc.
 We also make the pages more user interactive and also linked the site to a database for user related activities. It now stores all the data related to the user in the database which can be used when the user login again on the website. Each user data is also stored separately hence we can track multiple users at the same time.
+</br>
+Demo : https://drive.google.com/drive/folders/1IH6ePzcwEjuyjl_c3oahf-Y5jUcLdiBY?usp=sharing
+
 <br /><br />
 ## Technology Stack we used in building this Project :<br />
 1. HTML<br />
