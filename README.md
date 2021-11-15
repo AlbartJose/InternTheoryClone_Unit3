@@ -50,9 +50,9 @@ Demo : https://drive.google.com/drive/folders/1IH6ePzcwEjuyjl_c3oahf-Y5jUcLdiBY?
 
 
 ## Team members: <br />
-1. Albart Jose { github - https://github.com/AlbartJose }<br />
-2. Jai yadav { github - https://github.com/jai6013 }<br />
-3. Srikanth { github - https://github.com/srikanth-vnts }<br />
+1. [Albart Jose](https://github.com/AlbartJose)<br />
+2. [Jai Yadav](https://github.com/jai6013)<br />
+3. [Srikanth](https://github.com/srikanth-vnts)<br />
 
 ## For Developers
 `clone the repository`<br />
@@ -61,5 +61,4 @@ Demo : https://drive.google.com/drive/folders/1IH6ePzcwEjuyjl_c3oahf-Y5jUcLdiBY?
 `run localhost:2222/ on a browser`<br />
 
 ## Blogs
-For further details on our cloned website, you can visit our blogs.<br />
-1. Srikanth { https://medium.com/@vnts.srikanth/cloning-of-interntheory-website-my-first-collaborative-work-8b7d1f4b2a7f }
+For further details on our cloned website, you can visit our [blog](https://medium.com/@vnts.srikanth/cloning-of-interntheory-website-my-first-collaborative-work-8b7d1f4b2a7f)
